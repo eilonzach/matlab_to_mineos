@@ -1,3 +1,2 @@
 This folder contains a script ontaining the full workflow for the 
-MINEOS code to use for the forward problem within the Bayesian 
-inversion. The output file naming is designed to allow parallelisation.
+MINEOS code. The output file naming is designed to allow parallelisation.
