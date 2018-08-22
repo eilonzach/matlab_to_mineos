@@ -8,10 +8,9 @@ echo "Stripping mineos" >> example2L.log
 $xdir/mineos_strip <<! >> example2L.log
 example2L.strip
 example2L_0.eig_fix
-example2L_1.eig_fix
-example2L_3.eig_fix
+example2L_2.eig_fix
 example2L_4.eig_fix
-example2L_22.eig
+example2L_16.eig
 
 !
 #
@@ -55,10 +54,9 @@ example2L.table_hdr.branch
 example2L.cvfrechet
 example2L_0.eig_fix
 0
-example2L_1.eig_fix
-example2L_3.eig_fix
+example2L_2.eig_fix
 example2L_4.eig_fix
-example2L_22.eig
+example2L_16.eig
 
 !
 #
