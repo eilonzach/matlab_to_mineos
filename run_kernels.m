@@ -56,11 +56,11 @@ kernelfile = [ID,'.frechet'];
 
 
 % standard inputs, don't get re-written
-qmod= 'safekeeping/qmod';
+qmod= '/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod';
 
 %% =======================================================================
 wd = pwd;
-cd('/Users/zeilon/Documents/MATLAB/matlab_to_mineos');
+% cd('/Users/zeilon/Documents/MATLAB/matlab_to_mineos');
 
 %% CALCULATE AND READ IN PERTURBATION KERNELS 
 %(frechet derivatves of parm perturbation)
@@ -89,6 +89,29 @@ for ip = 1:length(ikernelfiles)
 end
 end
 
+%% plot
+if ifplot
+    %% read modes output
+    [phV,grV] = readMINEOS_qfile(qfile,swperiods);
+    phV = phV(:);
+    grV = grV(:);
+
+    figure(88), clf; set(gcf,'pos',[331 385 1348 713]);
+    ax1 = subplot(3,3,[1,4]); cla, hold on;
+    ax2 = subplot(3,3,[2,5,8]); cla, hold on;
+    ax3 = subplot(3,3,[3,6,9]); cla, hold on;   
+    % kernels
+    plot_KERNELS( SW_V_kernels,ifanis,ax2,ax3 )
+
+    % dispersion curves
+    hd(1)=plot(ax1,swperiods,phV,'o-','linewidth',2);
+    hd(2)=plot(ax1,swperiods,grV,'o-','linewidth',2);
+    hl = legend(ax1,hd,{'Phase (c)','Group (U)'},'location','southeast');
+    set(hl,'fontsize',16,'fontweight','bold')
+    set(ax1,'fontsize',16)
+    xlabel(ax1,'Period (s)','interpreter','latex','fontsize',22)
+    ylabel(ax1,'Velocity (km/s)','interpreter','latex','fontsize',22)
+end
 
 %% delete files
 if ifdelete
@@ -107,24 +130,7 @@ if ifdelete
 end
 cd(wd);
 
-%% plot
-if ifplot
-    figure(88), clf; set(gcf,'pos',[331 385 1348 713]);
-    ax1 = subplot(3,3,[1,4]); cla, hold on;
-    ax2 = subplot(3,3,[2,5,8]); cla, hold on;
-    ax3 = subplot(3,3,[3,6,9]); cla, hold on;   
-    % kernels
-    plot_KERNELS( SW_V_kernels,ifanis,ax2,ax3 )
 
-    % dispersion curves
-    hd(1)=plot(ax1,swperiods,phV,'o-','linewidth',2);
-    hd(2)=plot(ax1,swperiods,grV,'o-','linewidth',2);
-    hl = legend(ax1,hd,{'Phase (c)','Group (U)'},'location','southeast');
-    set(hl,'fontsize',16,'fontweight','bold')
-    set(ax1,'fontsize',16)
-    xlabel(ax1,'Period (s)','interpreter','latex','fontsize',22)
-    ylabel(ax1,'Velocity (km/s)','interpreter','latex','fontsize',22)
-end
 
 if ifverbose
 	fprintf('Kernels %s%s took %.5f s\n',ID,R_or_L(1),(now-tic1)*86400)

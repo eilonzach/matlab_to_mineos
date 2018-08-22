@@ -40,7 +40,7 @@ switch R_or_L(1)
         modetype = 'T';
 end
 
-qmod= 'safekeeping/qmod';
+qmod= '/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod';
 
 %% =======================================================================
 wd = pwd;
@@ -48,7 +48,7 @@ global MINEOSDIR
 if isempty(MINEOSDIR)
     MINEOSDIR =  extractBefore(mfilename('fullpath'),mfilename);
 end
-cd(MINEOSDIR);
+% cd(MINEOSDIR);
 
 
 %% write MINEOS executable and input files format
