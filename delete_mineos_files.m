@@ -7,7 +7,8 @@ if ~ischar(ID), ID = num2str(ID);end
 ID = [ID,R_or_L];
 execfile = [ID,'.run_mineos'];  %if exist(execfile,'file')~=2, execfile = ''; end
 cardfile = [ID,'.model'];       %if exist(cardfile,'file')~=2, cardfile = ''; end
-eigfile = [ID,'.eig'];          %if exist(eigfile,'file')~=2, eigfile = ''; end
+eigfile = [ID,'*.eig'];          %if exist(eigfile,'file')~=2, eigfile = ''; end
+eigfilefix = [ID,'*.eig_fix'];          %if exist(eigfile,'file')~=2, eigfile = ''; end
 qfile = [ID,'.q'];
 ofile1 = [ID,'.asc1'];          %if exist(ofile1,'file')~=2, ofile1 = ''; end
 logfile = [ID,'.log'];          %if exist(logfile,'file')~=2, logfile = ''; end
@@ -32,6 +33,7 @@ cd(MINEOSDIR);
 if exist(execfile,'file')==2, delete(execfile); end
 if exist(cardfile,'file')==2, delete(cardfile); end
 if exist(eigfile,'file')==2, delete(eigfile); end
+if exist(eigfile_fix,'file')==2, delete(eigfile); end
 if exist(ofile1,'file')==2, delete(ofile1); end
 if exist(qfile,'file')==2, delete(qfile); end
 if exist(stripfile,'file')==2, delete(stripfile); end

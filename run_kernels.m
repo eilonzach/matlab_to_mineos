@@ -1,5 +1,5 @@
-function [SW_V_kernels] = run_kernels(swperiods,R_or_L,ph_or_gr,ID,ifdelete,ifplot,ifverbose,ifanis)
-% [SWV_kernels] = run_kernels(swperiods,R_or_L,ph_or_gr,ID,ifdelete,ifplot,ifverbose,ifanis)
+function [SW_V_kernels] = run_kernels(swperiods,R_or_L,ph_or_gr,ID,eigfiles,ifdelete,ifplot,ifverbose,ifanis)
+% [SWV_kernels] = run_kernels(swperiods,R_or_L,ph_or_gr,ID,eigfiles,ifdelete,ifplot,ifverbose,ifanis)
 % 
 % Function to calculate perturbational phase velocity kernels, having
 % previously run MINEOS
@@ -14,16 +14,19 @@ end
 if nargin < 4 || isempty(ID)
     ID = 'eg';
 end
-if nargin < 5 || isempty(ifdelete)
+if nargin < 5 || isempty(eigfiles)
+    eigfiles = {[ID,'_0.eig']};
+end
+if nargin < 6 || isempty(ifdelete)
     ifdelete = true;
 end
-if nargin < 6 || isempty(ifplot)
+if nargin < 7 || isempty(ifplot)
     ifplot = false;
 end
-if nargin < 7 || isempty(ifverbose)
+if nargin < 8 || isempty(ifverbose)
     ifverbose = true;
 end
-if nargin < 8 || isempty(ifanis)
+if nargin < 9 || isempty(ifanis)
     ifanis = false;
 end
 
@@ -44,15 +47,13 @@ end
 if ~ischar(ID), ID = num2str(ID);end
 ID = [ID,R_or_L(1)];
 execfile = [ID,'.run_mineos'];
-cardfile = [ID,'.model'];
-eigfile = [ID,'.eig'];
-ofile1 = [ID,'.asc1'];
 logfile = [ID,'.log'];
 execfile_k = [ID,'.run_kernels'];
 stripfile = [ID,'.strip'];
 tabfile = [ID,'.table'];
 qfile = [ID,'.q'];
 kernelfile = [ID,'.frechet'];
+
 
 % standard inputs, don't get re-written
 qmod= 'safekeeping/qmod';
@@ -61,16 +62,11 @@ qmod= 'safekeeping/qmod';
 wd = pwd;
 cd('/Users/zeilon/Documents/MATLAB/matlab_to_mineos');
 
-%% read modes output
-[phV,grV] = readMINEOS_qfile(qfile,swperiods);
-phV = phV(:);
-grV = grV(:);
-
 %% CALCULATE AND READ IN PERTURBATION KERNELS 
 %(frechet derivatves of parm perturbation)
     
 %% write kernel calc executable
-ikernelfiles = writeKERNELCALCexecfile(swperiods,R_or_L(1),ph_gr,execfile_k,stripfile,eigfile,qmod,tabfile,qfile,kernelfile,ID,logfile);
+ikernelfiles = writeKERNELCALCexecfile(swperiods,R_or_L(1),ph_gr,execfile_k,stripfile,eigfiles,qmod,tabfile,qfile,kernelfile,ID,logfile);
 system(['chmod u+x ' execfile_k]);
 
 %% do the kernel calculating
@@ -96,7 +92,12 @@ end
 
 %% delete files
 if ifdelete
-    delete(execfile,cardfile,eigfile,ofile1,qfile);
+	delete([ID,'_*.model'])
+	delete([ID,'_*.asc'])
+    delete([ID,'.q'])
+    delete([ID,'_*.eig'])
+    delete([ID,'_*.eig_fix'])
+    if exist([ID,'.log'],'file')==2, delete([ID,'.log']); end
 	delete(execfile_k,stripfile,tabfile,[tabfile,'_hdr'],[tabfile,'_hdr.branch']);
     if exist(kernelfile,'file')==2,delete(regexprep(kernelfile,'cv','gv'));end
     if exist(regexprep(kernelfile,'.fre','.cvfre'),'file')==2,delete(regexprep(kernelfile,'.fre','.cvfre'));end

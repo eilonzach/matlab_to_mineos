@@ -1,11 +1,10 @@
-function writeMINEOS_Qexecfile( execfile,eigfiles,qmod,qfile,logfile,n_eig_loop )
-% writeMINEOS_Qexecfile( execfile,n_eig_loop,eigfiles,qmod,qfile,logfile )
+function writeMINEOS_Qexecfile( execfile,eigfiles,qmod,qfile,logfile )
+% writeMINEOS_Qexecfile( execfile,eigfiles,qmod,qfile,logfile )
 %   
 % Function to write execution file for MINEOS_Q function (to q-correct phase velocities)
 % 
 % INPUTS:
 %  execfile  - name of execution file to write
-%  n_eig_loop- number of eigenfunctions files (includes zeroth file)
 %  eigfiles  - name(s) of eigenfunctions output binary files 
 %                 can be several of these if the mineos calculation stopped
 %                 multiple times before reaching its desired frequency
@@ -19,9 +18,6 @@ if exist(execfile,'file')==2
     delete(execfile); % kill if it is there 
 end
 
-if nargin<6 || isempty(n_eig_loop)
-    n_eig_loop = 1;
-end
 
 if isstring(eigfiles)
     eigfiles = {eigfiles};
@@ -37,11 +33,12 @@ fprintf(fid,'echo "Q-correcting velocities"\n');
 %
 fprintf(fid,'#\n');
 %
+fprintf(fid,'set xdir=/Users/zeilon/Work/codes/CADMINEOS/bin\n');
 fprintf(fid,'$xdir/mineos_q << ! >> %s\n',logfile);
 fprintf(fid,'%s\n',qmod);
 fprintf(fid,'%s\n',qfile);
-for i = 1:n_eig_loop
-    fprintf(fid,'%s\n',eigfiles{i});
+for ief = 1:length(eigfiles)
+    fprintf(fid,'%s\n',eigfiles{ief});
 end
 fprintf(fid,'\n');
 fprintf(fid,'!\n');

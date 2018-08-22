@@ -1,5 +1,5 @@
-function ikernelfiles = writeKERNELCALCexecfile(swperiods,R_or_L,ph_gr,execfile,stripfile,eigfile,qmod,tabfile,qfile,kernelfile,ikprefix,logfile)
-% ikernelfiles = writeKERNELCALCexecfile(swperiods,R_o_rL,ph_or_gr,execfile,stripfile,eigfile,tabfile,qfile,kernelfile,ikprefix,logfile)
+function ikernelfiles = writeKERNELCALCexecfile(swperiods,R_or_L,ph_gr,execfile,stripfile,eigfiles,qmod,tabfile,qfile,kernelfile,ikprefix,logfile)
+% ikernelfiles = writeKERNELCALCexecfile(swperiods,R_o_rL,ph_or_gr,execfile,stripfile,eigfiles,tabfile,qfile,kernelfile,ikprefix,logfile)
 %   
 % Function to write execution file for kernel calculator having run MINEOS code
 % 
@@ -7,10 +7,10 @@ function ikernelfiles = writeKERNELCALCexecfile(swperiods,R_or_L,ph_gr,execfile,
 %  swperiods - vector of surface wave periods (will be rounded to integers)
 %  R_or_L    - string of Rayleygh ('Ray'|'R') or Love ('Lov'|'R')
 %  ph_gr     - (1x2) vector to do phase [1 0] or group [0 1] or both [1 1]
-%  swperiods - vector of surface wave periods (will be rounded to integers)
 %  execfile  - name of executable file 
-%  modefile  - name of strip file
-%  eigfile   - name of eigenfunctions output binary file
+%  stripfile  - name of strip file
+%  eigfiles  - name of eigenfunctions output binary files (plural if
+%              multiple mineos runs required to get to max freq
 %  qmod      - name of qmod file with details about (unused) Q model
 %  tabfile   - name of output table file
 %  qfile     - name of output q file (= output from mineos_q; not the same as the Q model)
@@ -31,8 +31,11 @@ switch R_or_L
         maxangl = 3500;
 end
 
+if isstring(eigfiles)
+    eigfiles = {eigfiles};
+end
 
-
+maxf = 1000./min(swperiods) + 0.1; % in mHz
 
 %% write synth.in parameter file
 fid = fopen(execfile,'w');
@@ -49,7 +52,9 @@ fprintf(fid,'#\n');
 %
 fprintf(fid,'$xdir/mineos_strip <<! >> %s\n',logfile);
 fprintf(fid,'%s\n',stripfile);
-fprintf(fid,'%s\n',eigfile);
+for ief = 1:length(eigfiles)
+    fprintf(fid,'%s\n',eigfiles{ief});
+end
 fprintf(fid,'\n');
 fprintf(fid,'!\n');
 %
@@ -63,7 +68,7 @@ fprintf(fid,'#\n');
 fprintf(fid,'$xdir/mineos_table <<! >> %s\n',logfile);
 fprintf(fid,'%s\n',tabfile);
 fprintf(fid,'40000\n');
-fprintf(fid,'0 200.1\n');
+fprintf(fid,'0 %.1f\n',maxf);
 fprintf(fid,'0 %.0f\n',maxangl);
 fprintf(fid,'%s\n',qfile);
 fprintf(fid,'%s\n',stripfile);
@@ -84,7 +89,7 @@ fprintf(fid,'#\n');
 fprintf(fid,'$xdir/plot_wk <<! >> %s\n',logfile);
 fprintf(fid,'table %s_hdr\n',tabfile);
 fprintf(fid,'search\n');
-fprintf(fid,'1 0.0 200.05\n');
+fprintf(fid,'1 0.0 %.2f\n',maxf);
 fprintf(fid,'99 0 0\n');
 fprintf(fid,'branch\n');
 fprintf(fid,'\n');
@@ -104,7 +109,9 @@ fprintf(fid,'$xdir/frechet_cv <<! >> %s\n',logfile);
 fprintf(fid,'%s\n',qmod);
 fprintf(fid,'%s_hdr.branch\n',tabfile);
 fprintf(fid,'%s\n',ckernelfile);
-fprintf(fid,'%s\n',eigfile);
+for ief = 1:length(eigfiles)
+    fprintf(fid,'%s\n',eigfiles{ief});
+end
 fprintf(fid,'0\n');
 fprintf(fid,'\n');
 fprintf(fid,'!\n');
@@ -125,8 +132,11 @@ fprintf(fid,'$xdir/frechet <<! >> %s\n',logfile);
 fprintf(fid,'%s\n',qmod);
 fprintf(fid,'%s_hdr.branch\n',tabfile);
 fprintf(fid,'%s\n',kernelfile);
-fprintf(fid,'%s\n',eigfile);
+fprintf(fid,'%s\n',eigfiles{1});
 fprintf(fid,'0\n');
+for ief = 2:length(eigfiles)
+    fprintf(fid,'%s\n',eigfiles{ief});
+end
 fprintf(fid,'\n');
 fprintf(fid,'!\n');
 %

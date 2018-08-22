@@ -2,13 +2,13 @@
 
 shopt -s nullglob
 
-files=( *.asc1 )
+files=( *.asc* )
 if (( ${#files[@]} )); then
     
 
-for i in *.asc1
+for i in *.asc*
  do 
- j=`echo $i | sed s/.asc1//g`
+ j=`echo $i | sed s/.asc//g`
  echo $j
  rm $j*
 done
