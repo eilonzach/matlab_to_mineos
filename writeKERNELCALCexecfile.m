@@ -109,10 +109,11 @@ fprintf(fid,'$xdir/frechet_cv <<! >> %s\n',logfile);
 fprintf(fid,'%s\n',qmod);
 fprintf(fid,'%s_hdr.branch\n',tabfile);
 fprintf(fid,'%s\n',ckernelfile);
-for ief = 1:length(eigfiles)
+fprintf(fid,'%s\n',eigfiles{1});
+fprintf(fid,'0\n');
+for ief = 2:length(eigfiles)
     fprintf(fid,'%s\n',eigfiles{ief});
 end
-fprintf(fid,'0\n');
 fprintf(fid,'\n');
 fprintf(fid,'!\n');
 %

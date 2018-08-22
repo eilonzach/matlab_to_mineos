@@ -1,0 +1,1976 @@
+=================================================
+Stripping mineos
+  Enter the pathname of the stripped mode file.
+  Enter the pathname of the mineos file to be stripped.
+  mode type =            2  lmin =            1  lmax =         3500
+  wmin =    5.00000007E-02  wmax =    200.050003    
+  knots =          410          86         148
+  radius =    6371000.00    
+  saving          183  knots
+  Enter the pathname of the mineos file to be stripped.
+=================================================
+Done stripping, now calculating tables
+  Enter the pathname of the output mode table.
+  Enter the best guess for the max number of modes
+   please over-estimate
+  Enter min and max frequencies to be reformatted (mhz)
+  Enter min and max angular orders to be reformatted 
+ mineos_q output file for this mode set
+ mineos_strip output file to be reformatted.
+  mode type =            2  lmin =            1  lmax =         3500
+  wmin =    5.00000007E-02  wmax =    200.050003    
+  knots =          410
+  stripped knots =          183
+ Frequency out of range of input bounds:    125.15271929863938                0          1350
+ Frequency out of range of input bounds:    125.24105884041658                0          1351
+ Frequency out of range of input bounds:    125.32940809624061                0          1352
+ Frequency out of range of input bounds:    125.41775735206463                0          1353
+ Frequency out of range of input bounds:    125.50609689384184                0          1354
+ Frequency out of range of input bounds:    125.59444614966586                0          1355
+ Frequency out of range of input bounds:    125.68278569144306                0          1356
+ Frequency out of range of input bounds:    125.77113494726709                0          1357
+ Frequency out of range of input bounds:    125.85947448904429                0          1358
+ Frequency out of range of input bounds:    125.94781403082149                0          1359
+ Frequency out of range of input bounds:    126.03616328664552                0          1360
+ Frequency out of range of input bounds:    126.12450282842272                0          1361
+ Frequency out of range of input bounds:    126.21284237019992                0          1362
+ Frequency out of range of input bounds:    126.30118191197712                0          1363
+ Frequency out of range of input bounds:    126.38953116780115                0          1364
+ Frequency out of range of input bounds:    126.47787070957835                0          1365
+ Frequency out of range of input bounds:    126.56620053730873                0          1366
+ Frequency out of range of input bounds:    126.65454007908593                0          1367
+ Frequency out of range of input bounds:    126.74288933490996                0          1368
+ Frequency out of range of input bounds:    126.83122887668716                0          1369
+ Frequency out of range of input bounds:    126.91955870441754                0          1370
+ Frequency out of range of input bounds:    127.00789824619476                0          1371
+ Frequency out of range of input bounds:    127.09623778797196                0          1372
+ Frequency out of range of input bounds:    127.18457732974916                0          1373
+ Frequency out of range of input bounds:    127.27290715747954                0          1374
+ Frequency out of range of input bounds:    127.36124669925674                0          1375
+ Frequency out of range of input bounds:    127.44958624103394                0          1376
+ Frequency out of range of input bounds:    127.53792578281114                0          1377
+ Frequency out of range of input bounds:    127.62624589649471                0          1378
+ Frequency out of range of input bounds:    127.71458543827191                0          1379
+ Frequency out of range of input bounds:    127.80292498004911                0          1380
+ Frequency out of range of input bounds:    127.89126452182633                0          1381
+ Frequency out of range of input bounds:    127.97958463550988                0          1382
+ Frequency out of range of input bounds:    128.06792417728710                0          1383
+ Frequency out of range of input bounds:    128.15625400501747                0          1384
+ Frequency out of range of input bounds:    128.24459354679468                0          1385
+ Frequency out of range of input bounds:    128.33291366047825                0          1386
+ Frequency out of range of input bounds:    128.42125320225546                0          1387
+ Frequency out of range of input bounds:    128.50958302998583                0          1388
+ Frequency out of range of input bounds:    128.59791285771621                0          1389
+ Frequency out of range of input bounds:    128.68624268544659                0          1390
+ Frequency out of range of input bounds:    128.77457251317699                0          1391
+ Frequency out of range of input bounds:    128.86290234090737                0          1392
+ Frequency out of range of input bounds:    128.95123216863774                0          1393
+ Frequency out of range of input bounds:    129.03956199636812                0          1394
+ Frequency out of range of input bounds:    129.12788211005170                0          1395
+ Frequency out of range of input bounds:    129.21621193778208                0          1396
+ Frequency out of range of input bounds:    129.30455147955928                0          1397
+ Frequency out of range of input bounds:    129.39287159324286                0          1398
+ Frequency out of range of input bounds:    129.48119170692641                0          1399
+ Frequency out of range of input bounds:    129.56952153465679                0          1400
+ Frequency out of range of input bounds:    129.65785136238716                0          1401
+ Frequency out of range of input bounds:    129.74618119011757                0          1402
+ Frequency out of range of input bounds:    129.83451101784794                0          1403
+ Frequency out of range of input bounds:    129.92282141748470                0          1404
+ Frequency out of range of input bounds:    130.01115124521507                0          1405
+ Frequency out of range of input bounds:    130.09948107294545                0          1406
+ Frequency out of range of input bounds:    130.18780118662903                0          1407
+ Frequency out of range of input bounds:    130.27612130031258                0          1408
+ Frequency out of range of input bounds:    130.36444141399616                0          1409
+ Frequency out of range of input bounds:    130.45277124172654                0          1410
+ Frequency out of range of input bounds:    130.54109135541009                0          1411
+ Frequency out of range of input bounds:    130.62942118314047                0          1412
+ Frequency out of range of input bounds:    130.71773158277722                0          1413
+ Frequency out of range of input bounds:    130.80605169646080                0          1414
+ Frequency out of range of input bounds:    130.89438152419118                0          1415
+ Frequency out of range of input bounds:    130.98270163787473                0          1416
+ Frequency out of range of input bounds:    131.07102175155831                0          1417
+ Frequency out of range of input bounds:    131.15933215119503                0          1418
+ Frequency out of range of input bounds:    131.24765226487861                0          1419
+ Frequency out of range of input bounds:    131.33597237856216                0          1420
+ Frequency out of range of input bounds:    131.42429249224574                0          1421
+ Frequency out of range of input bounds:    131.51261260592929                0          1422
+ Frequency out of range of input bounds:    131.60092300556605                0          1423
+ Frequency out of range of input bounds:    131.68924311924960                0          1424
+ Frequency out of range of input bounds:    131.77756323293318                0          1425
+ Frequency out of range of input bounds:    131.86588334661673                0          1426
+ Frequency out of range of input bounds:    131.95419374625348                0          1427
+ Frequency out of range of input bounds:    132.04251385993706                0          1428
+ Frequency out of range of input bounds:    132.13082425957379                0          1429
+ Frequency out of range of input bounds:    132.21914437325736                0          1430
+ Frequency out of range of input bounds:    132.30746448694092                0          1431
+ Frequency out of range of input bounds:    132.39577488657767                0          1432
+ Frequency out of range of input bounds:    132.48408528621439                0          1433
+ Frequency out of range of input bounds:    132.57239568585115                0          1434
+ Frequency out of range of input bounds:    132.66071579953473                0          1435
+ Frequency out of range of input bounds:    132.74902619917145                0          1436
+ Frequency out of range of input bounds:    132.83734631285503                0          1437
+ Frequency out of range of input bounds:    132.92564699844496                0          1438
+ Frequency out of range of input bounds:    133.01395739808169                0          1439
+ Frequency out of range of input bounds:    133.10227751176527                0          1440
+ Frequency out of range of input bounds:    133.19058791140199                0          1441
+ Frequency out of range of input bounds:    133.27889831103874                0          1442
+ Frequency out of range of input bounds:    133.36719899662867                0          1443
+ Frequency out of range of input bounds:    133.45550939626543                0          1444
+ Frequency out of range of input bounds:    133.54382950994898                0          1445
+ Frequency out of range of input bounds:    133.63213990958573                0          1446
+ Frequency out of range of input bounds:    133.72045030922246                0          1447
+ Frequency out of range of input bounds:    133.80876070885921                0          1448
+ Frequency out of range of input bounds:    133.89706139444914                0          1449
+ Frequency out of range of input bounds:    133.98536208003907                0          1450
+ Frequency out of range of input bounds:    134.07367247967582                0          1451
+ Frequency out of range of input bounds:    134.16198287931255                0          1452
+ Frequency out of range of input bounds:    134.25029327894930                0          1453
+ Frequency out of range of input bounds:    134.33859396453923                0          1454
+ Frequency out of range of input bounds:    134.42689465012916                0          1455
+ Frequency out of range of input bounds:    134.51520504976588                0          1456
+ Frequency out of range of input bounds:    134.60351544940264                0          1457
+ Frequency out of range of input bounds:    134.69181613499256                0          1458
+ Frequency out of range of input bounds:    134.78012653462932                0          1459
+ Frequency out of range of input bounds:    134.86842722021922                0          1460
+ Frequency out of range of input bounds:    134.95672790580915                0          1461
+ Frequency out of range of input bounds:    135.04502859139907                0          1462
+ Frequency out of range of input bounds:    135.13333899103583                0          1463
+ Frequency out of range of input bounds:    135.22163967662576                0          1464
+ Frequency out of range of input bounds:    135.30995007626248                0          1465
+ Frequency out of range of input bounds:    135.39824104780561                0          1466
+ Frequency out of range of input bounds:    135.48654173339551                0          1467
+ Frequency out of range of input bounds:    135.57484241898544                0          1468
+ Frequency out of range of input bounds:    135.66315281862219                0          1469
+ Frequency out of range of input bounds:    135.75145350421212                0          1470
+ Frequency out of range of input bounds:    135.83975418980205                0          1471
+ Frequency out of range of input bounds:    135.92805487539198                0          1472
+ Frequency out of range of input bounds:    136.01634584693508                0          1473
+ Frequency out of range of input bounds:    136.10464653252501                0          1474
+ Frequency out of range of input bounds:    136.19294721811494                0          1475
+ Frequency out of range of input bounds:    136.28124790370484                0          1476
+ Frequency out of range of input bounds:    136.36954858929477                0          1477
+ Frequency out of range of input bounds:    136.45784927488469                0          1478
+ Frequency out of range of input bounds:    136.54613053238097                0          1479
+ Frequency out of range of input bounds:    136.63443121797090                0          1480
+ Frequency out of range of input bounds:    136.72273190356083                0          1481
+ Frequency out of range of input bounds:    136.81103258915076                0          1482
+ Frequency out of range of input bounds:    136.89932356069386                0          1483
+ Frequency out of range of input bounds:    136.98762424628379                0          1484
+ Frequency out of range of input bounds:    137.07592493187371                0          1485
+ Frequency out of range of input bounds:    137.16420618936999                0          1486
+ Frequency out of range of input bounds:    137.25250687495992                0          1487
+ Frequency out of range of input bounds:    137.34079784650302                0          1488
+ Frequency out of range of input bounds:    137.42909853209295                0          1489
+ Frequency out of range of input bounds:    137.51738950363605                0          1490
+ Frequency out of range of input bounds:    137.60568047517916                0          1491
+ Frequency out of range of input bounds:    137.69398116076908                0          1492
+ Frequency out of range of input bounds:    137.78226241826539                0          1493
+ Frequency out of range of input bounds:    137.87055338980849                0          1494
+ Frequency out of range of input bounds:    137.95885407539842                0          1495
+ Frequency out of range of input bounds:    138.04714504694152                0          1496
+ Frequency out of range of input bounds:    138.13543601848463                0          1497
+ Frequency out of range of input bounds:    138.22372699002773                0          1498
+ Frequency out of range of input bounds:    138.31201796157083                0          1499
+ Frequency out of range of input bounds:    138.40029921906711                0          1500
+ Frequency out of range of input bounds:    138.48859019061021                0          1501
+ Frequency out of range of input bounds:    138.57688116215331                0          1502
+ Frequency out of range of input bounds:    138.66517213369644                0          1503
+ Frequency out of range of input bounds:    138.75346310523955                0          1504
+ Frequency out of range of input bounds:    138.84175407678265                0          1505
+ Frequency out of range of input bounds:    138.93004504832575                0          1506
+ Frequency out of range of input bounds:    139.01832630582203                0          1507
+ Frequency out of range of input bounds:    139.10660756331831                0          1508
+ Frequency out of range of input bounds:    139.19489853486144                0          1509
+ Frequency out of range of input bounds:    139.28318950640454                0          1510
+ Frequency out of range of input bounds:    139.37147076390082                0          1511
+ Frequency out of range of input bounds:    139.45976173544392                0          1512
+ Frequency out of range of input bounds:    139.54805270698702                0          1513
+ Frequency out of range of input bounds:    139.63633396448330                0          1514
+ Frequency out of range of input bounds:    139.72462493602643                0          1515
+ Frequency out of range of input bounds:    139.81289647947588                0          1516
+ Frequency out of range of input bounds:    139.90118745101898                0          1517
+ Frequency out of range of input bounds:    139.98946870851526                0          1518
+ Frequency out of range of input bounds:    140.07774996601157                0          1519
+ Frequency out of range of input bounds:    140.16604093755467                0          1520
+ Frequency out of range of input bounds:    140.25432219505095                0          1521
+ Frequency out of range of input bounds:    140.34260345254722                0          1522
+ Frequency out of range of input bounds:    140.43089442409035                0          1523
+ Frequency out of range of input bounds:    140.51916596753981                0          1524
+ Frequency out of range of input bounds:    140.60744722503608                0          1525
+ Frequency out of range of input bounds:    140.69572848253239                0          1526
+ Frequency out of range of input bounds:    140.78400974002867                0          1527
+ Frequency out of range of input bounds:    140.87229099752494                0          1528
+ Frequency out of range of input bounds:    140.96057225502125                0          1529
+ Frequency out of range of input bounds:    141.04885351251752                0          1530
+ Frequency out of range of input bounds:    141.13713477001380                0          1531
+ Frequency out of range of input bounds:    141.22541602751011                0          1532
+ Frequency out of range of input bounds:    141.31368757095956                0          1533
+ Frequency out of range of input bounds:    141.40196882845584                0          1534
+ Frequency out of range of input bounds:    141.49025008595214                0          1535
+ Frequency out of range of input bounds:    141.57852162940159                0          1536
+ Frequency out of range of input bounds:    141.66680288689790                0          1537
+ Frequency out of range of input bounds:    141.75508414439417                0          1538
+ Frequency out of range of input bounds:    141.84335568784363                0          1539
+ Frequency out of range of input bounds:    141.93163694533993                0          1540
+ Frequency out of range of input bounds:    142.01991820283621                0          1541
+ Frequency out of range of input bounds:    142.10818974628569                0          1542
+ Frequency out of range of input bounds:    142.19646128973514                0          1543
+ Frequency out of range of input bounds:    142.28473283318462                0          1544
+ Frequency out of range of input bounds:    142.37301409068090                0          1545
+ Frequency out of range of input bounds:    142.46128563413035                0          1546
+ Frequency out of range of input bounds:    142.54955717757983                0          1547
+ Frequency out of range of input bounds:    142.63783843507611                0          1548
+ Frequency out of range of input bounds:    142.72610997852559                0          1549
+ Frequency out of range of input bounds:    142.81438152197504                0          1550
+ Frequency out of range of input bounds:    142.90266277947134                0          1551
+ Frequency out of range of input bounds:    142.99093432292079                0          1552
+ Frequency out of range of input bounds:    143.07920586637027                0          1553
+ Frequency out of range of input bounds:    143.16746769577290                0          1554
+ Frequency out of range of input bounds:    143.25573923922238                0          1555
+ Frequency out of range of input bounds:    143.34401078267183                0          1556
+ Frequency out of range of input bounds:    143.43228232612131                0          1557
+ Frequency out of range of input bounds:    143.52055386957076                0          1558
+ Frequency out of range of input bounds:    143.60882541302024                0          1559
+ Frequency out of range of input bounds:    143.69709695646969                0          1560
+ Frequency out of range of input bounds:    143.78536849991917                0          1561
+ Frequency out of range of input bounds:    143.87364004336862                0          1562
+ Frequency out of range of input bounds:    143.96191158681810                0          1563
+ Frequency out of range of input bounds:    144.05018313026758                0          1564
+ Frequency out of range of input bounds:    144.13844495967021                0          1565
+ Frequency out of range of input bounds:    144.22670678907286                0          1566
+ Frequency out of range of input bounds:    144.31497833252234                0          1567
+ Frequency out of range of input bounds:    144.40324016192497                0          1568
+ Frequency out of range of input bounds:    144.49151170537445                0          1569
+ Frequency out of range of input bounds:    144.57978324882390                0          1570
+ Frequency out of range of input bounds:    144.66804507822656                0          1571
+ Frequency out of range of input bounds:    144.75631662167604                0          1572
+ Frequency out of range of input bounds:    144.84457845107866                0          1573
+ Frequency out of range of input bounds:    144.93284999452814                0          1574
+ Frequency out of range of input bounds:    145.02111182393080                0          1575
+ Frequency out of range of input bounds:    145.10937365333342                0          1576
+ Frequency out of range of input bounds:    145.19764519678290                0          1577
+ Frequency out of range of input bounds:    145.28590702618555                0          1578
+ Frequency out of range of input bounds:    145.37415914154136                0          1579
+ Frequency out of range of input bounds:    145.46243068499084                0          1580
+ Frequency out of range of input bounds:    145.55069251439349                0          1581
+ Frequency out of range of input bounds:    145.63895434379612                0          1582
+ Frequency out of range of input bounds:    145.72721617319877                0          1583
+ Frequency out of range of input bounds:    145.81547800260142                0          1584
+ Frequency out of range of input bounds:    145.90373983200408                0          1585
+ Frequency out of range of input bounds:    145.99200166140670                0          1586
+ Frequency out of range of input bounds:    146.08026349080936                0          1587
+ Frequency out of range of input bounds:    146.16852532021201                0          1588
+ Frequency out of range of input bounds:    146.25678714961467                0          1589
+ Frequency out of range of input bounds:    146.34504897901729                0          1590
+ Frequency out of range of input bounds:    146.43331080841995                0          1591
+ Frequency out of range of input bounds:    146.52157263782260                0          1592
+ Frequency out of range of input bounds:    146.60983446722523                0          1593
+ Frequency out of range of input bounds:    146.69808658258106                0          1594
+ Frequency out of range of input bounds:    146.78633869793688                0          1595
+ Frequency out of range of input bounds:    146.87460052733954                0          1596
+ Frequency out of range of input bounds:    146.96286235674219                0          1597
+ Frequency out of range of input bounds:    147.05111447209802                0          1598
+ Frequency out of range of input bounds:    147.13937630150068                0          1599
+ Frequency out of range of input bounds:    147.22762841685648                0          1600
+ Frequency out of range of input bounds:    147.31589024625913                0          1601
+ Frequency out of range of input bounds:    147.40414236161496                0          1602
+ Frequency out of range of input bounds:    147.49240419101761                0          1603
+ Frequency out of range of input bounds:    147.58065630637344                0          1604
+ Frequency out of range of input bounds:    147.66891813577610                0          1605
+ Frequency out of range of input bounds:    147.75717025113190                0          1606
+ Frequency out of range of input bounds:    147.84542236648772                0          1607
+ Frequency out of range of input bounds:    147.93368419589038                0          1608
+ Frequency out of range of input bounds:    148.02193631124621                0          1609
+ Frequency out of range of input bounds:    148.11018842660204                0          1610
+ Frequency out of range of input bounds:    148.19844054195786                0          1611
+ Frequency out of range of input bounds:    148.28669265731369                0          1612
+ Frequency out of range of input bounds:    148.37495448671635                0          1613
+ Frequency out of range of input bounds:    148.46320660207218                0          1614
+ Frequency out of range of input bounds:    148.55145871742801                0          1615
+ Frequency out of range of input bounds:    148.63970111873701                0          1616
+ Frequency out of range of input bounds:    148.72795323409284                0          1617
+ Frequency out of range of input bounds:    148.81620534944867                0          1618
+ Frequency out of range of input bounds:    148.90445746480449                0          1619
+ Frequency out of range of input bounds:    148.99269986611350                0          1620
+ Frequency out of range of input bounds:    149.08095198146933                0          1621
+ Frequency out of range of input bounds:    149.16920409682515                0          1622
+ Frequency out of range of input bounds:    149.25745621218098                0          1623
+ Frequency out of range of input bounds:    149.34570832753678                0          1624
+ Frequency out of range of input bounds:    149.43395072884582                0          1625
+ Frequency out of range of input bounds:    149.52220284420164                0          1626
+ Frequency out of range of input bounds:    149.61045495955747                0          1627
+ Frequency out of range of input bounds:    149.69869736086648                0          1628
+ Frequency out of range of input bounds:    149.78694947622230                0          1629
+ Frequency out of range of input bounds:    149.87519187753131                0          1630
+ Frequency out of range of input bounds:    149.96344399288714                0          1631
+ Frequency out of range of input bounds:    150.05168639419614                0          1632
+ Frequency out of range of input bounds:    150.13993850955197                0          1633
+ Frequency out of range of input bounds:    150.22818091086097                0          1634
+ Frequency out of range of input bounds:    150.31643302621680                0          1635
+ Frequency out of range of input bounds:    150.40467542752580                0          1636
+ Frequency out of range of input bounds:    150.49291782883481                0          1637
+ Frequency out of range of input bounds:    150.58116994419063                0          1638
+ Frequency out of range of input bounds:    150.66941234549964                0          1639
+ Frequency out of range of input bounds:    150.75765474680864                0          1640
+ Frequency out of range of input bounds:    150.84589714811767                0          1641
+ Frequency out of range of input bounds:    150.93413954942667                0          1642
+ Frequency out of range of input bounds:    151.02239166478250                0          1643
+ Frequency out of range of input bounds:    151.11063406609151                0          1644
+ Frequency out of range of input bounds:    151.19887646740051                0          1645
+ Frequency out of range of input bounds:    151.28711886870951                0          1646
+ Frequency out of range of input bounds:    151.37536127001852                0          1647
+ Frequency out of range of input bounds:    151.46360367132755                0          1648
+ Frequency out of range of input bounds:    151.55184607263655                0          1649
+ Frequency out of range of input bounds:    151.64007875989873                0          1650
+ Frequency out of range of input bounds:    151.72832116120773                0          1651
+ Frequency out of range of input bounds:    151.81656356251673                0          1652
+ Frequency out of range of input bounds:    151.90480596382574                0          1653
+ Frequency out of range of input bounds:    151.99304836513477                0          1654
+ Frequency out of range of input bounds:    152.08128105239695                0          1655
+ Frequency out of range of input bounds:    152.16952345370595                0          1656
+ Frequency out of range of input bounds:    152.25776585501495                0          1657
+ Frequency out of range of input bounds:    152.34599854227716                0          1658
+ Frequency out of range of input bounds:    152.43424094358616                0          1659
+ Frequency out of range of input bounds:    152.52247363084834                0          1660
+ Frequency out of range of input bounds:    152.61070631811054                0          1661
+ Frequency out of range of input bounds:    152.69894871941955                0          1662
+ Frequency out of range of input bounds:    152.78718140668173                0          1663
+ Frequency out of range of input bounds:    152.87541409394390                0          1664
+ Frequency out of range of input bounds:    152.96365649525293                0          1665
+ Frequency out of range of input bounds:    153.05188918251511                0          1666
+ Frequency out of range of input bounds:    153.14012186977729                0          1667
+ Frequency out of range of input bounds:    153.22836427108632                0          1668
+ Frequency out of range of input bounds:    153.31659695834850                0          1669
+ Frequency out of range of input bounds:    153.40482964561068                0          1670
+ Frequency out of range of input bounds:    153.49307204691968                0          1671
+ Frequency out of range of input bounds:    153.58130473418188                0          1672
+ Frequency out of range of input bounds:    153.66953742144406                0          1673
+ Frequency out of range of input bounds:    153.75777982275306                0          1674
+ Frequency out of range of input bounds:    153.84601251001527                0          1675
+ Frequency out of range of input bounds:    153.93424519727745                0          1676
+ Frequency out of range of input bounds:    154.02247788453963                0          1677
+ Frequency out of range of input bounds:    154.11071057180183                0          1678
+ Frequency out of range of input bounds:    154.19893354501718                0          1679
+ Frequency out of range of input bounds:    154.28716623227939                0          1680
+ Frequency out of range of input bounds:    154.37539891954157                0          1681
+ Frequency out of range of input bounds:    154.46363160680374                0          1682
+ Frequency out of range of input bounds:    154.55186429406595                0          1683
+ Frequency out of range of input bounds:    154.64009698132813                0          1684
+ Frequency out of range of input bounds:    154.72831995454351                0          1685
+ Frequency out of range of input bounds:    154.81655264180569                0          1686
+ Frequency out of range of input bounds:    154.90478532906786                0          1687
+ Frequency out of range of input bounds:    154.99300830228324                0          1688
+ Frequency out of range of input bounds:    155.08124098954542                0          1689
+ Frequency out of range of input bounds:    155.16946396276080                0          1690
+ Frequency out of range of input bounds:    155.25769665002298                0          1691
+ Frequency out of range of input bounds:    155.34591962323836                0          1692
+ Frequency out of range of input bounds:    155.43415231050054                0          1693
+ Frequency out of range of input bounds:    155.52237528371592                0          1694
+ Frequency out of range of input bounds:    155.61060797097809                0          1695
+ Frequency out of range of input bounds:    155.69883094419347                0          1696
+ Frequency out of range of input bounds:    155.78705391740883                0          1697
+ Frequency out of range of input bounds:    155.87528660467103                0          1698
+ Frequency out of range of input bounds:    155.96350957788638                0          1699
+ Frequency out of range of input bounds:    156.05173255110176                0          1700
+ Frequency out of range of input bounds:    156.13995552431714                0          1701
+ Frequency out of range of input bounds:    156.22817849753250                0          1702
+ Frequency out of range of input bounds:    156.31640147074788                0          1703
+ Frequency out of range of input bounds:    156.40463415801005                0          1704
+ Frequency out of range of input bounds:    156.49285713122543                0          1705
+ Frequency out of range of input bounds:    156.58108010444079                0          1706
+ Frequency out of range of input bounds:    156.66930307765617                0          1707
+ Frequency out of range of input bounds:    156.75752605087152                0          1708
+ Frequency out of range of input bounds:    156.84573931004007                0          1709
+ Frequency out of range of input bounds:    156.93396228325545                0          1710
+ Frequency out of range of input bounds:    157.02218525647081                0          1711
+ Frequency out of range of input bounds:    157.11040822968619                0          1712
+ Frequency out of range of input bounds:    157.19863120290154                0          1713
+ Frequency out of range of input bounds:    157.28685417611692                0          1714
+ Frequency out of range of input bounds:    157.37506743528547                0          1715
+ Frequency out of range of input bounds:    157.46329040850082                0          1716
+ Frequency out of range of input bounds:    157.55152309576303                0          1717
+ Frequency out of range of input bounds:    157.63973635493159                0          1718
+ Frequency out of range of input bounds:    157.72795932814694                0          1719
+ Frequency out of range of input bounds:    157.81617258731549                0          1720
+ Frequency out of range of input bounds:    157.90439556053087                0          1721
+ Frequency out of range of input bounds:    157.99260881969940                0          1722
+ Frequency out of range of input bounds:    158.08083179291478                0          1723
+ Frequency out of range of input bounds:    158.16904505208333                0          1724
+ Frequency out of range of input bounds:    158.25726802529869                0          1725
+ Frequency out of range of input bounds:    158.34548128446724                0          1726
+ Frequency out of range of input bounds:    158.43369454363580                0          1727
+ Frequency out of range of input bounds:    158.52191751685115                0          1728
+ Frequency out of range of input bounds:    158.61013077601970                0          1729
+ Frequency out of range of input bounds:    158.69834403518826                0          1730
+ Frequency out of range of input bounds:    158.78655729435681                0          1731
+ Frequency out of range of input bounds:    158.87477055352537                0          1732
+ Frequency out of range of input bounds:    158.96299352674072                0          1733
+ Frequency out of range of input bounds:    159.05120678590927                0          1734
+ Frequency out of range of input bounds:    159.13942004507783                0          1735
+ Frequency out of range of input bounds:    159.22762359019956                0          1736
+ Frequency out of range of input bounds:    159.31584656341491                0          1737
+ Frequency out of range of input bounds:    159.40405982258346                0          1738
+ Frequency out of range of input bounds:    159.49228279579884                0          1739
+ Frequency out of range of input bounds:    159.58048634092057                0          1740
+ Frequency out of range of input bounds:    159.66870931413592                0          1741
+ Frequency out of range of input bounds:    159.75691285925765                0          1742
+ Frequency out of range of input bounds:    159.84513583247303                0          1743
+ Frequency out of range of input bounds:    159.93333937759476                0          1744
+ Frequency out of range of input bounds:    160.02154292271649                0          1745
+ Frequency out of range of input bounds:    160.10976589593184                0          1746
+ Frequency out of range of input bounds:    160.19796944105357                0          1747
+ Frequency out of range of input bounds:    160.28617298617530                0          1748
+ Frequency out of range of input bounds:    160.37439595939068                0          1749
+ Frequency out of range of input bounds:    160.46259950451241                0          1750
+ Frequency out of range of input bounds:    160.55080304963414                0          1751
+ Frequency out of range of input bounds:    160.63900659475587                0          1752
+ Frequency out of range of input bounds:    160.72722956797125                0          1753
+ Frequency out of range of input bounds:    160.81544282713978                0          1754
+ Frequency out of range of input bounds:    160.90364637226151                0          1755
+ Frequency out of range of input bounds:    160.99184991738323                0          1756
+ Frequency out of range of input bounds:    161.08005346250496                0          1757
+ Frequency out of range of input bounds:    161.16825700762669                0          1758
+ Frequency out of range of input bounds:    161.25647998084207                0          1759
+ Frequency out of range of input bounds:    161.34468352596380                0          1760
+ Frequency out of range of input bounds:    161.43288707108553                0          1761
+ Frequency out of range of input bounds:    161.52109061620726                0          1762
+ Frequency out of range of input bounds:    161.60929416132899                0          1763
+ Frequency out of range of input bounds:    161.69749770645072                0          1764
+ Frequency out of range of input bounds:    161.78570125157245                0          1765
+ Frequency out of range of input bounds:    161.87390479669418                0          1766
+ Frequency out of range of input bounds:    161.96210834181591                0          1767
+ Frequency out of range of input bounds:    162.05032160098446                0          1768
+ Frequency out of range of input bounds:    162.13852514610619                0          1769
+ Frequency out of range of input bounds:    162.22672869122792                0          1770
+ Frequency out of range of input bounds:    162.31493223634965                0          1771
+ Frequency out of range of input bounds:    162.40313578147138                0          1772
+ Frequency out of range of input bounds:    162.49131989849946                0          1773
+ Frequency out of range of input bounds:    162.57952344362118                0          1774
+ Frequency out of range of input bounds:    162.66772698874291                0          1775
+ Frequency out of range of input bounds:    162.75593053386464                0          1776
+ Frequency out of range of input bounds:    162.84413407898637                0          1777
+ Frequency out of range of input bounds:    162.93233762410810                0          1778
+ Frequency out of range of input bounds:    163.02053145518300                0          1779
+ Frequency out of range of input bounds:    163.10873500030476                0          1780
+ Frequency out of range of input bounds:    163.19693854542649                0          1781
+ Frequency out of range of input bounds:    163.28514209054822                0          1782
+ Frequency out of range of input bounds:    163.37332620757630                0          1783
+ Frequency out of range of input bounds:    163.46152975269803                0          1784
+ Frequency out of range of input bounds:    163.54973329781976                0          1785
+ Frequency out of range of input bounds:    163.63791741484783                0          1786
+ Frequency out of range of input bounds:    163.72612095996956                0          1787
+ Frequency out of range of input bounds:    163.81432450509129                0          1788
+ Frequency out of range of input bounds:    163.90250862211940                0          1789
+ Frequency out of range of input bounds:    163.99071216724113                0          1790
+ Frequency out of range of input bounds:    164.07891571236286                0          1791
+ Frequency out of range of input bounds:    164.16709982939093                0          1792
+ Frequency out of range of input bounds:    164.25530337451266                0          1793
+ Frequency out of range of input bounds:    164.34348749154077                0          1794
+ Frequency out of range of input bounds:    164.43169103666250                0          1795
+ Frequency out of range of input bounds:    164.51989458178423                0          1796
+ Frequency out of range of input bounds:    164.60809812690596                0          1797
+ Frequency out of range of input bounds:    164.69628224393404                0          1798
+ Frequency out of range of input bounds:    164.78448578905576                0          1799
+ Frequency out of range of input bounds:    164.87266990608387                0          1800
+ Frequency out of range of input bounds:    164.96087345120560                0          1801
+ Frequency out of range of input bounds:    165.04905756823368                0          1802
+ Frequency out of range of input bounds:    165.13724168526176                0          1803
+ Frequency out of range of input bounds:    165.22544523038349                0          1804
+ Frequency out of range of input bounds:    165.31362934741159                0          1805
+ Frequency out of range of input bounds:    165.40183289253332                0          1806
+ Frequency out of range of input bounds:    165.49001700956140                0          1807
+ Frequency out of range of input bounds:    165.57820112658951                0          1808
+ Frequency out of range of input bounds:    165.66638524361758                0          1809
+ Frequency out of range of input bounds:    165.75458878873931                0          1810
+ Frequency out of range of input bounds:    165.84277290576742                0          1811
+ Frequency out of range of input bounds:    165.93095702279550                0          1812
+ Frequency out of range of input bounds:    166.01914113982357                0          1813
+ Frequency out of range of input bounds:    166.10736411303895                0          1814
+ Frequency out of range of input bounds:    166.19554823006703                0          1815
+ Frequency out of range of input bounds:    166.28373234709514                0          1816
+ Frequency out of range of input bounds:    166.37191646412322                0          1817
+ Frequency out of range of input bounds:    166.46010058115132                0          1818
+ Frequency out of range of input bounds:    166.54828469817940                0          1819
+ Frequency out of range of input bounds:    166.63648824330113                0          1820
+ Frequency out of range of input bounds:    166.72467236032924                0          1821
+ Frequency out of range of input bounds:    166.81285647735731                0          1822
+ Frequency out of range of input bounds:    166.90104059438539                0          1823
+ Frequency out of range of input bounds:    166.98922471141350                0          1824
+ Frequency out of range of input bounds:    167.07740882844158                0          1825
+ Frequency out of range of input bounds:    167.16559294546968                0          1826
+ Frequency out of range of input bounds:    167.25377706249776                0          1827
+ Frequency out of range of input bounds:    167.34196117952584                0          1828
+ Frequency out of range of input bounds:    167.43014529655395                0          1829
+ Frequency out of range of input bounds:    167.51832941358202                0          1830
+ Frequency out of range of input bounds:    167.60653295870375                0          1831
+ Frequency out of range of input bounds:    167.69469764763821                0          1832
+ Frequency out of range of input bounds:    167.78288176466631                0          1833
+ Frequency out of range of input bounds:    167.87106588169439                0          1834
+ Frequency out of range of input bounds:    167.95924999872247                0          1835
+ Frequency out of range of input bounds:    168.04743411575058                0          1836
+ Frequency out of range of input bounds:    168.13561823277865                0          1837
+ Frequency out of range of input bounds:    168.22380234980676                0          1838
+ Frequency out of range of input bounds:    168.31196703874122                0          1839
+ Frequency out of range of input bounds:    168.40015115576929                0          1840
+ Frequency out of range of input bounds:    168.48833527279737                0          1841
+ Frequency out of range of input bounds:    168.57651938982548                0          1842
+ Frequency out of range of input bounds:    168.66468407875993                0          1843
+ Frequency out of range of input bounds:    168.75286819578801                0          1844
+ Frequency out of range of input bounds:    168.84105231281612                0          1845
+ Frequency out of range of input bounds:    168.92923642984420                0          1846
+ Frequency out of range of input bounds:    169.01742054687227                0          1847
+ Frequency out of range of input bounds:    169.10560466390038                0          1848
+ Frequency out of range of input bounds:    169.19376935283483                0          1849
+ Frequency out of range of input bounds:    169.28195346986291                0          1850
+ Frequency out of range of input bounds:    169.37011815879737                0          1851
+ Frequency out of range of input bounds:    169.45830227582545                0          1852
+ Frequency out of range of input bounds:    169.54646696475990                0          1853
+ Frequency out of range of input bounds:    169.63465108178801                0          1854
+ Frequency out of range of input bounds:    169.72283519881609                0          1855
+ Frequency out of range of input bounds:    169.81099988775054                0          1856
+ Frequency out of range of input bounds:    169.89916457668500                0          1857
+ Frequency out of range of input bounds:    169.98734869371307                0          1858
+ Frequency out of range of input bounds:    170.07553281074118                0          1859
+ Frequency out of range of input bounds:    170.16371692776926                0          1860
+ Frequency out of range of input bounds:    170.25188161670371                0          1861
+ Frequency out of range of input bounds:    170.34006573373179                0          1862
+ Frequency out of range of input bounds:    170.42823042266625                0          1863
+ Frequency out of range of input bounds:    170.51639511160070                0          1864
+ Frequency out of range of input bounds:    170.60457922862878                0          1865
+ Frequency out of range of input bounds:    170.69274391756323                0          1866
+ Frequency out of range of input bounds:    170.78090860649769                0          1867
+ Frequency out of range of input bounds:    170.86909272352580                0          1868
+ Frequency out of range of input bounds:    170.95725741246022                0          1869
+ Frequency out of range of input bounds:    171.04542210139468                0          1870
+ Frequency out of range of input bounds:    171.13358679032913                0          1871
+ Frequency out of range of input bounds:    171.22179033545086                0          1872
+ Frequency out of range of input bounds:    171.30995502438532                0          1873
+ Frequency out of range of input bounds:    171.39811971331977                0          1874
+ Frequency out of range of input bounds:    171.48628440225423                0          1875
+ Frequency out of range of input bounds:    171.57444909118868                0          1876
+ Frequency out of range of input bounds:    171.66261378012311                0          1877
+ Frequency out of range of input bounds:    171.75077846905756                0          1878
+ Frequency out of range of input bounds:    171.83896258608567                0          1879
+ Frequency out of range of input bounds:    171.92712727502013                0          1880
+ Frequency out of range of input bounds:    172.01529196395455                0          1881
+ Frequency out of range of input bounds:    172.10345665288901                0          1882
+ Frequency out of range of input bounds:    172.19162134182346                0          1883
+ Frequency out of range of input bounds:    172.27980545885157                0          1884
+ Frequency out of range of input bounds:    172.36797014778600                0          1885
+ Frequency out of range of input bounds:    172.45613483672045                0          1886
+ Frequency out of range of input bounds:    172.54429952565491                0          1887
+ Frequency out of range of input bounds:    172.63246421458936                0          1888
+ Frequency out of range of input bounds:    172.72062890352382                0          1889
+ Frequency out of range of input bounds:    172.80877416436462                0          1890
+ Frequency out of range of input bounds:    172.89693885329908                0          1891
+ Frequency out of range of input bounds:    172.98510354223353                0          1892
+ Frequency out of range of input bounds:    173.07326823116799                0          1893
+ Frequency out of range of input bounds:    173.16143292010241                0          1894
+ Frequency out of range of input bounds:    173.24961703713052                0          1895
+ Frequency out of range of input bounds:    173.33776229797132                0          1896
+ Frequency out of range of input bounds:    173.42592698690578                0          1897
+ Frequency out of range of input bounds:    173.51409167584023                0          1898
+ Frequency out of range of input bounds:    173.60225636477469                0          1899
+ Frequency out of range of input bounds:    173.69042105370914                0          1900
+ Frequency out of range of input bounds:    173.77856631454995                0          1901
+ Frequency out of range of input bounds:    173.86673100348440                0          1902
+ Frequency out of range of input bounds:    173.95489569241886                0          1903
+ Frequency out of range of input bounds:    174.04304095325966                0          1904
+ Frequency out of range of input bounds:    174.13120564219412                0          1905
+ Frequency out of range of input bounds:    174.21938975922220                0          1906
+ Frequency out of range of input bounds:    174.30753502006300                0          1907
+ Frequency out of range of input bounds:    174.39569970899745                0          1908
+ Frequency out of range of input bounds:    174.48384496983826                0          1909
+ Frequency out of range of input bounds:    174.57200965877271                0          1910
+ Frequency out of range of input bounds:    174.66015491961355                0          1911
+ Frequency out of range of input bounds:    174.74831960854797                0          1912
+ Frequency out of range of input bounds:    174.83646486938881                0          1913
+ Frequency out of range of input bounds:    174.92462955832326                0          1914
+ Frequency out of range of input bounds:    175.01277481916406                0          1915
+ Frequency out of range of input bounds:    175.10095893619214                0          1916
+ Frequency out of range of input bounds:    175.18910419703298                0          1917
+ Frequency out of range of input bounds:    175.27726888596740                0          1918
+ Frequency out of range of input bounds:    175.36541414680823                0          1919
+ Frequency out of range of input bounds:    175.45355940764904                0          1920
+ Frequency out of range of input bounds:    175.54172409658349                0          1921
+ Frequency out of range of input bounds:    175.62986935742430                0          1922
+ Frequency out of range of input bounds:    175.71801461826510                0          1923
+ Frequency out of range of input bounds:    175.80617930719956                0          1924
+ Frequency out of range of input bounds:    175.89432456804036                0          1925
+ Frequency out of range of input bounds:    175.98248925697482                0          1926
+ Frequency out of range of input bounds:    176.07065394590927                0          1927
+ Frequency out of range of input bounds:    176.15879920675007                0          1928
+ Frequency out of range of input bounds:    176.24694446759091                0          1929
+ Frequency out of range of input bounds:    176.33508972843171                0          1930
+ Frequency out of range of input bounds:    176.42323498927252                0          1931
+ Frequency out of range of input bounds:    176.51138025011335                0          1932
+ Frequency out of range of input bounds:    176.59954493904777                0          1933
+ Frequency out of range of input bounds:    176.68769019988861                0          1934
+ Frequency out of range of input bounds:    176.77583546072941                0          1935
+ Frequency out of range of input bounds:    176.86400014966387                0          1936
+ Frequency out of range of input bounds:    176.95214541050467                0          1937
+ Frequency out of range of input bounds:    177.04029067134547                0          1938
+ Frequency out of range of input bounds:    177.12843593218631                0          1939
+ Frequency out of range of input bounds:    177.21658119302711                0          1940
+ Frequency out of range of input bounds:    177.30472645386791                0          1941
+ Frequency out of range of input bounds:    177.39287171470872                0          1942
+ Frequency out of range of input bounds:    177.48101697554955                0          1943
+ Frequency out of range of input bounds:    177.56916223639035                0          1944
+ Frequency out of range of input bounds:    177.65732692532481                0          1945
+ Frequency out of range of input bounds:    177.74547218616561                0          1946
+ Frequency out of range of input bounds:    177.83361744700642                0          1947
+ Frequency out of range of input bounds:    177.92176270784725                0          1948
+ Frequency out of range of input bounds:    178.00990796868805                0          1949
+ Frequency out of range of input bounds:    178.09803380143524                0          1950
+ Frequency out of range of input bounds:    178.18617906227604                0          1951
+ Frequency out of range of input bounds:    178.27432432311684                0          1952
+ Frequency out of range of input bounds:    178.36246958395765                0          1953
+ Frequency out of range of input bounds:    178.45063427289210                0          1954
+ Frequency out of range of input bounds:    178.53876010563928                0          1955
+ Frequency out of range of input bounds:    178.62690536648009                0          1956
+ Frequency out of range of input bounds:    178.71505062732089                0          1957
+ Frequency out of range of input bounds:    178.80317646006807                0          1958
+ Frequency out of range of input bounds:    178.89132172090888                0          1959
+ Frequency out of range of input bounds:    178.97946698174971                0          1960
+ Frequency out of range of input bounds:    179.06759281449686                0          1961
+ Frequency out of range of input bounds:    179.15575750343132                0          1962
+ Frequency out of range of input bounds:    179.24390276427215                0          1963
+ Frequency out of range of input bounds:    179.33202859701930                0          1964
+ Frequency out of range of input bounds:    179.42017385786014                0          1965
+ Frequency out of range of input bounds:    179.50829969060729                0          1966
+ Frequency out of range of input bounds:    179.59644495144809                0          1967
+ Frequency out of range of input bounds:    179.68457078419527                0          1968
+ Frequency out of range of input bounds:    179.77271604503608                0          1969
+ Frequency out of range of input bounds:    179.86084187778326                0          1970
+ Frequency out of range of input bounds:    179.94900656671771                0          1971
+ Frequency out of range of input bounds:    180.03713239946489                0          1972
+ Frequency out of range of input bounds:    180.12527766030570                0          1973
+ Frequency out of range of input bounds:    180.21340349305288                0          1974
+ Frequency out of range of input bounds:    180.30152932580003                0          1975
+ Frequency out of range of input bounds:    180.38967458664087                0          1976
+ Frequency out of range of input bounds:    180.47780041938802                0          1977
+ Frequency out of range of input bounds:    180.56592625213520                0          1978
+ Frequency out of range of input bounds:    180.65409094106965                0          1979
+ Frequency out of range of input bounds:    180.74221677381684                0          1980
+ Frequency out of range of input bounds:    180.83034260656399                0          1981
+ Frequency out of range of input bounds:    180.91848786740482                0          1982
+ Frequency out of range of input bounds:    181.00661370015197                0          1983
+ Frequency out of range of input bounds:    181.09473953289915                0          1984
+ Frequency out of range of input bounds:    181.18286536564634                0          1985
+ Frequency out of range of input bounds:    181.27099119839349                0          1986
+ Frequency out of range of input bounds:    181.35915588732794                0          1987
+ Frequency out of range of input bounds:    181.44728172007513                0          1988
+ Frequency out of range of input bounds:    181.53540755282231                0          1989
+ Frequency out of range of input bounds:    181.62353338556946                0          1990
+ Frequency out of range of input bounds:    181.71165921831664                0          1991
+ Frequency out of range of input bounds:    181.79978505106382                0          1992
+ Frequency out of range of input bounds:    181.88791088381097                0          1993
+ Frequency out of range of input bounds:    181.97605614465181                0          1994
+ Frequency out of range of input bounds:    182.06418197739896                0          1995
+ Frequency out of range of input bounds:    182.15230781014614                0          1996
+ Frequency out of range of input bounds:    182.24043364289332                0          1997
+ Frequency out of range of input bounds:    182.32855947564047                0          1998
+ Frequency out of range of input bounds:    182.41668530838766                0          1999
+ Frequency out of range of input bounds:    182.50481114113484                0          2000
+ Frequency out of range of input bounds:    182.59293697388202                0          2001
+ Frequency out of range of input bounds:    182.68108223472282                0          2002
+ Frequency out of range of input bounds:    182.76920806747000                0          2003
+ Frequency out of range of input bounds:    182.85733390021716                0          2004
+ Frequency out of range of input bounds:    182.94544030487069                0          2005
+ Frequency out of range of input bounds:    183.03356613761787                0          2006
+ Frequency out of range of input bounds:    183.12169197036505                0          2007
+ Frequency out of range of input bounds:    183.20981780311220                0          2008
+ Frequency out of range of input bounds:    183.29796306395303                0          2009
+ Frequency out of range of input bounds:    183.38606946860656                0          2010
+ Frequency out of range of input bounds:    183.47419530135375                0          2011
+ Frequency out of range of input bounds:    183.56232113410090                0          2012
+ Frequency out of range of input bounds:    183.65042753875443                0          2013
+ Frequency out of range of input bounds:    183.73855337150161                0          2014
+ Frequency out of range of input bounds:    183.82667920424879                0          2015
+ Frequency out of range of input bounds:    183.91480503699594                0          2016
+ Frequency out of range of input bounds:    184.00293086974312                0          2017
+ Frequency out of range of input bounds:    184.09103727439665                0          2018
+ Frequency out of range of input bounds:    184.17916310714384                0          2019
+ Frequency out of range of input bounds:    184.26728893989102                0          2020
+ Frequency out of range of input bounds:    184.35539534454455                0          2021
+ Frequency out of range of input bounds:    184.44352117729170                0          2022
+ Frequency out of range of input bounds:    184.53164701003888                0          2023
+ Frequency out of range of input bounds:    184.61977284278606                0          2024
+ Frequency out of range of input bounds:    184.70787924743959                0          2025
+ Frequency out of range of input bounds:    184.79598565209312                0          2026
+ Frequency out of range of input bounds:    184.88411148484030                0          2027
+ Frequency out of range of input bounds:    184.97221788949383                0          2028
+ Frequency out of range of input bounds:    185.06034372224102                0          2029
+ Frequency out of range of input bounds:    185.14846955498817                0          2030
+ Frequency out of range of input bounds:    185.23657595964170                0          2031
+ Frequency out of range of input bounds:    185.32470179238888                0          2032
+ Frequency out of range of input bounds:    185.41280819704241                0          2033
+ Frequency out of range of input bounds:    185.50091460169594                0          2034
+ Frequency out of range of input bounds:    185.58904043444312                0          2035
+ Frequency out of range of input bounds:    185.67714683909665                0          2036
+ Frequency out of range of input bounds:    185.76527267184383                0          2037
+ Frequency out of range of input bounds:    185.85337907649736                0          2038
+ Frequency out of range of input bounds:    185.94148548115089                0          2039
+ Frequency out of range of input bounds:    186.02961131389807                0          2040
+ Frequency out of range of input bounds:    186.11771771855160                0          2041
+ Frequency out of range of input bounds:    186.20582412320513                0          2042
+ Frequency out of range of input bounds:    186.29394995595231                0          2043
+ Frequency out of range of input bounds:    186.38205636060584                0          2044
+ Frequency out of range of input bounds:    186.47016276525937                0          2045
+ Frequency out of range of input bounds:    186.55826916991290                0          2046
+ Frequency out of range of input bounds:    186.64637557456643                0          2047
+ Frequency out of range of input bounds:    186.73448197921996                0          2048
+ Frequency out of range of input bounds:    186.82258838387349                0          2049
+ Frequency out of range of input bounds:    186.91071421662068                0          2050
+ Frequency out of range of input bounds:    186.99882062127421                0          2051
+ Frequency out of range of input bounds:    187.08692702592774                0          2052
+ Frequency out of range of input bounds:    187.17503343058129                0          2053
+ Frequency out of range of input bounds:    187.26313983523482                0          2054
+ Frequency out of range of input bounds:    187.35124623988835                0          2055
+ Frequency out of range of input bounds:    187.43937207263551                0          2056
+ Frequency out of range of input bounds:    187.52745904919541                0          2057
+ Frequency out of range of input bounds:    187.61556545384894                0          2058
+ Frequency out of range of input bounds:    187.70367185850247                0          2059
+ Frequency out of range of input bounds:    187.79177826315600                0          2060
+ Frequency out of range of input bounds:    187.87988466780953                0          2061
+ Frequency out of range of input bounds:    187.96799107246309                0          2062
+ Frequency out of range of input bounds:    188.05609747711662                0          2063
+ Frequency out of range of input bounds:    188.14420388177015                0          2064
+ Frequency out of range of input bounds:    188.23229085833003                0          2065
+ Frequency out of range of input bounds:    188.32039726298359                0          2066
+ Frequency out of range of input bounds:    188.40850366763712                0          2067
+ Frequency out of range of input bounds:    188.49661007229065                0          2068
+ Frequency out of range of input bounds:    188.58471647694418                0          2069
+ Frequency out of range of input bounds:    188.67282288159771                0          2070
+ Frequency out of range of input bounds:    188.76090985815762                0          2071
+ Frequency out of range of input bounds:    188.84901626281115                0          2072
+ Frequency out of range of input bounds:    188.93710323937103                0          2073
+ Frequency out of range of input bounds:    189.02522907211821                0          2074
+ Frequency out of range of input bounds:    189.11331604867809                0          2075
+ Frequency out of range of input bounds:    189.20142245333165                0          2076
+ Frequency out of range of input bounds:    189.28950942989152                0          2077
+ Frequency out of range of input bounds:    189.37761583454505                0          2078
+ Frequency out of range of input bounds:    189.46570281110496                0          2079
+ Frequency out of range of input bounds:    189.55380921575849                0          2080
+ Frequency out of range of input bounds:    189.64191562041202                0          2081
+ Frequency out of range of input bounds:    189.73000259697193                0          2082
+ Frequency out of range of input bounds:    189.81808957353181                0          2083
+ Frequency out of range of input bounds:    189.90619597818534                0          2084
+ Frequency out of range of input bounds:    189.99428295474524                0          2085
+ Frequency out of range of input bounds:    190.08238935939877                0          2086
+ Frequency out of range of input bounds:    190.17049576405230                0          2087
+ Frequency out of range of input bounds:    190.25858274061221                0          2088
+ Frequency out of range of input bounds:    190.34666971717209                0          2089
+ Frequency out of range of input bounds:    190.43475669373200                0          2090
+ Frequency out of range of input bounds:    190.52284367029188                0          2091
+ Frequency out of range of input bounds:    190.61096950303906                0          2092
+ Frequency out of range of input bounds:    190.69905647959894                0          2093
+ Frequency out of range of input bounds:    190.78714345615884                0          2094
+ Frequency out of range of input bounds:    190.87523043271875                0          2095
+ Frequency out of range of input bounds:    190.96331740927863                0          2096
+ Frequency out of range of input bounds:    191.05142381393216                0          2097
+ Frequency out of range of input bounds:    191.13951079049207                0          2098
+ Frequency out of range of input bounds:    191.22759776705195                0          2099
+ Frequency out of range of input bounds:    191.31568474361185                0          2100
+ Frequency out of range of input bounds:    191.40377172017173                0          2101
+ Frequency out of range of input bounds:    191.49185869673164                0          2102
+ Frequency out of range of input bounds:    191.57996510138517                0          2103
+ Frequency out of range of input bounds:    191.66805207794508                0          2104
+ Frequency out of range of input bounds:    191.75613905450496                0          2105
+ Frequency out of range of input bounds:    191.84422603106486                0          2106
+ Frequency out of range of input bounds:    191.93229357953112                0          2107
+ Frequency out of range of input bounds:    192.02039998418465                0          2108
+ Frequency out of range of input bounds:    192.10848696074453                0          2109
+ Frequency out of range of input bounds:    192.19657393730444                0          2110
+ Frequency out of range of input bounds:    192.28466091386431                0          2111
+ Frequency out of range of input bounds:    192.37272846233057                0          2112
+ Frequency out of range of input bounds:    192.46081543889048                0          2113
+ Frequency out of range of input bounds:    192.54892184354401                0          2114
+ Frequency out of range of input bounds:    192.63700882010392                0          2115
+ Frequency out of range of input bounds:    192.72507636857017                0          2116
+ Frequency out of range of input bounds:    192.81316334513005                0          2117
+ Frequency out of range of input bounds:    192.90125032168996                0          2118
+ Frequency out of range of input bounds:    192.98933729824984                0          2119
+ Frequency out of range of input bounds:    193.07742427480974                0          2120
+ Frequency out of range of input bounds:    193.16549182327600                0          2121
+ Frequency out of range of input bounds:    193.25357879983588                0          2122
+ Frequency out of range of input bounds:    193.34164634830213                0          2123
+ Frequency out of range of input bounds:    193.42975275295566                0          2124
+ Frequency out of range of input bounds:    193.51782030142192                0          2125
+ Frequency out of range of input bounds:    193.60590727798183                0          2126
+ Frequency out of range of input bounds:    193.69397482644808                0          2127
+ Frequency out of range of input bounds:    193.78206180300796                0          2128
+ Frequency out of range of input bounds:    193.87012935147422                0          2129
+ Frequency out of range of input bounds:    193.95823575612775                0          2130
+ Frequency out of range of input bounds:    194.04630330459401                0          2131
+ Frequency out of range of input bounds:    194.13437085306026                0          2132
+ Frequency out of range of input bounds:    194.22245782962017                0          2133
+ Frequency out of range of input bounds:    194.31052537808642                0          2134
+ Frequency out of range of input bounds:    194.39861235464630                0          2135
+ Frequency out of range of input bounds:    194.48667990311256                0          2136
+ Frequency out of range of input bounds:    194.57476687967247                0          2137
+ Frequency out of range of input bounds:    194.66283442813872                0          2138
+ Frequency out of range of input bounds:    194.75090197660498                0          2139
+ Frequency out of range of input bounds:    194.83898895316486                0          2140
+ Frequency out of range of input bounds:    194.92705650163111                0          2141
+ Frequency out of range of input bounds:    195.01514347819102                0          2142
+ Frequency out of range of input bounds:    195.10321102665728                0          2143
+ Frequency out of range of input bounds:    195.19127857512353                0          2144
+ Frequency out of range of input bounds:    195.27936555168341                0          2145
+ Frequency out of range of input bounds:    195.36743310014967                0          2146
+ Frequency out of range of input bounds:    195.45550064861592                0          2147
+ Frequency out of range of input bounds:    195.54356819708218                0          2148
+ Frequency out of range of input bounds:    195.63163574554844                0          2149
+ Frequency out of range of input bounds:    195.71972272210834                0          2150
+ Frequency out of range of input bounds:    195.80779027057460                0          2151
+ Frequency out of range of input bounds:    195.89585781904086                0          2152
+ Frequency out of range of input bounds:    195.98392536750711                0          2153
+ Frequency out of range of input bounds:    196.07199291597337                0          2154
+ Frequency out of range of input bounds:    196.16007989253325                0          2155
+ Frequency out of range of input bounds:    196.24812801290588                0          2156
+ Frequency out of range of input bounds:    196.33619556137214                0          2157
+ Frequency out of range of input bounds:    196.42426310983839                0          2158
+ Frequency out of range of input bounds:    196.51233065830462                0          2159
+ Frequency out of range of input bounds:    196.60041763486453                0          2160
+ Frequency out of range of input bounds:    196.68846575523713                0          2161
+ Frequency out of range of input bounds:    196.77653330370339                0          2162
+ Frequency out of range of input bounds:    196.86460085216964                0          2163
+ Frequency out of range of input bounds:    196.95266840063590                0          2164
+ Frequency out of range of input bounds:    197.04073594910216                0          2165
+ Frequency out of range of input bounds:    197.12880349756841                0          2166
+ Frequency out of range of input bounds:    197.21685161794105                0          2167
+ Frequency out of range of input bounds:    197.30491916640730                0          2168
+ Frequency out of range of input bounds:    197.39300614296718                0          2169
+ Frequency out of range of input bounds:    197.48105426333981                0          2170
+ Frequency out of range of input bounds:    197.56912181180607                0          2171
+ Frequency out of range of input bounds:    197.65716993217868                0          2172
+ Frequency out of range of input bounds:    197.74523748064493                0          2173
+ Frequency out of range of input bounds:    197.83330502911119                0          2174
+ Frequency out of range of input bounds:    197.92137257757744                0          2175
+ Frequency out of range of input bounds:    198.00942069795005                0          2176
+ Frequency out of range of input bounds:    198.09746881832268                0          2177
+ Frequency out of range of input bounds:    198.18555579488256                0          2178
+ Frequency out of range of input bounds:    198.27360391525519                0          2179
+ Frequency out of range of input bounds:    198.36167146372142                0          2180
+ Frequency out of range of input bounds:    198.44971958409405                0          2181
+ Frequency out of range of input bounds:    198.53776770446666                0          2182
+ Frequency out of range of input bounds:    198.62583525293292                0          2183
+ Frequency out of range of input bounds:    198.71390280139917                0          2184
+ Frequency out of range of input bounds:    198.80195092177181                0          2185
+ Frequency out of range of input bounds:    198.88999904214441                0          2186
+ Frequency out of range of input bounds:    198.97806659061067                0          2187
+ Frequency out of range of input bounds:    199.06613413907692                0          2188
+ Frequency out of range of input bounds:    199.15418225944953                0          2189
+ Frequency out of range of input bounds:    199.24223037982216                0          2190
+ Frequency out of range of input bounds:    199.33027850019477                0          2191
+ Frequency out of range of input bounds:    199.41834604866102                0          2192
+ Frequency out of range of input bounds:    199.50639416903363                0          2193
+ Frequency out of range of input bounds:    199.59444228940626                0          2194
+ Frequency out of range of input bounds:    199.68249040977886                0          2195
+ Frequency out of range of input bounds:    199.77055795824512                0          2196
+ Frequency out of range of input bounds:    199.85860607861775                0          2197
+ Frequency out of range of input bounds:    199.94665419899036                0          2198
+ Frequency out of range of input bounds:    200.03470231936296                0          2199
+ mineos_strip output file to be reformatted.
+  now writing mode table for         1349  modes
+  radius   0.875064850      written to output
+  radius   0.878982902      written to output
+  radius   0.878982902      written to output
+  radius   0.879641473      written to output
+  radius   0.883506656      written to output
+  radius   0.887327135      written to output
+  radius   0.891103268      written to output
+  radius   0.894835949      written to output
+  radius   0.894835949      written to output
+  radius   0.895401478      written to output
+  radius   0.898886204      written to output
+  radius   0.902360082      written to output
+  radius   0.905823290      written to output
+  radius   0.905823290      written to output
+  radius   0.908007085      written to output
+  radius   0.911404967      written to output
+  radius   0.914763749      written to output
+  radius   0.918083966      written to output
+  radius   0.921365738      written to output
+  radius   0.924609661      written to output
+  radius   0.927816212      written to output
+  radius   0.930985689      written to output
+  radius   0.934118688      written to output
+  radius   0.937215507      written to output
+  radius   0.937215507      written to output
+  radius   0.938931882      written to output
+  radius   0.941913486      written to output
+  radius   0.944886684      written to output
+  radius   0.947851658      written to output
+  radius   0.950808346      written to output
+  radius   0.952911615      written to output
+  radius   0.953221023      written to output
+  radius   0.953534901      written to output
+  radius   0.953848839      written to output
+  radius   0.954162776      written to output
+  radius   0.954476714      written to output
+  radius   0.954790592      written to output
+  radius   0.955104530      written to output
+  radius   0.955418468      written to output
+  radius   0.955732405      written to output
+  radius   0.956046283      written to output
+  radius   0.956360221      written to output
+  radius   0.956674159      written to output
+  radius   0.956988096      written to output
+  radius   0.957301974      written to output
+  radius   0.957615912      written to output
+  radius   0.957929850      written to output
+  radius   0.958243787      written to output
+  radius   0.958557665      written to output
+  radius   0.958871603      written to output
+  radius   0.959185541      written to output
+  radius   0.959499478      written to output
+  radius   0.959813356      written to output
+  radius   0.960127294      written to output
+  radius   0.960441232      written to output
+  radius   0.960755169      written to output
+  radius   0.961069047      written to output
+  radius   0.961382985      written to output
+  radius   0.961696923      written to output
+  radius   0.962010801      written to output
+  radius   0.962324739      written to output
+  radius   0.962638676      written to output
+  radius   0.962952614      written to output
+  radius   0.963266492      written to output
+  radius   0.963580430      written to output
+  radius   0.963894367      written to output
+  radius   0.964208305      written to output
+  radius   0.964522183      written to output
+  radius   0.964836121      written to output
+  radius   0.965150058      written to output
+  radius   0.965463996      written to output
+  radius   0.965777874      written to output
+  radius   0.966091812      written to output
+  radius   0.966405749      written to output
+  radius   0.966719687      written to output
+  radius   0.967033565      written to output
+  radius   0.967347503      written to output
+  radius   0.967661440      written to output
+  radius   0.967975378      written to output
+  radius   0.968289256      written to output
+  radius   0.968603194      written to output
+  radius   0.968917131      written to output
+  radius   0.969231069      written to output
+  radius   0.969544947      written to output
+  radius   0.969858885      written to output
+  radius   0.970172822      written to output
+  radius   0.970486760      written to output
+  radius   0.970800638      written to output
+  radius   0.971114576      written to output
+  radius   0.971428514      written to output
+  radius   0.971742451      written to output
+  radius   0.972056329      written to output
+  radius   0.972370267      written to output
+  radius   0.972684205      written to output
+  radius   0.972998142      written to output
+  radius   0.973312020      written to output
+  radius   0.973625958      written to output
+  radius   0.973939896      written to output
+  radius   0.974253833      written to output
+  radius   0.974567711      written to output
+  radius   0.974881649      written to output
+  radius   0.975195587      written to output
+  radius   0.975509524      written to output
+  radius   0.975823402      written to output
+  radius   0.976137340      written to output
+  radius   0.976451278      written to output
+  radius   0.976765215      written to output
+  radius   0.977079093      written to output
+  radius   0.977393031      written to output
+  radius   0.977706969      written to output
+  radius   0.978020847      written to output
+  radius   0.978334785      written to output
+  radius   0.978648722      written to output
+  radius   0.978962660      written to output
+  radius   0.979276538      written to output
+  radius   0.979590476      written to output
+  radius   0.979904413      written to output
+  radius   0.980218351      written to output
+  radius   0.980532229      written to output
+  radius   0.980846167      written to output
+  radius   0.981160104      written to output
+  radius   0.981474042      written to output
+  radius   0.981787920      written to output
+  radius   0.982101858      written to output
+  radius   0.982415795      written to output
+  radius   0.982729733      written to output
+  radius   0.983043611      written to output
+  radius   0.983357549      written to output
+  radius   0.983671486      written to output
+  radius   0.983985424      written to output
+  radius   0.984299302      written to output
+  radius   0.984613240      written to output
+  radius   0.984927177      written to output
+  radius   0.985241115      written to output
+  radius   0.985554993      written to output
+  radius   0.985868931      written to output
+  radius   0.986182868      written to output
+  radius   0.986496806      written to output
+  radius   0.986810684      written to output
+  radius   0.987124622      written to output
+  radius   0.987438560      written to output
+  radius   0.987752497      written to output
+  radius   0.988066375      written to output
+  radius   0.988380313      written to output
+  radius   0.988694251      written to output
+  radius   0.989008188      written to output
+  radius   0.989322066      written to output
+  radius   0.989636004      written to output
+  radius   0.989949942      written to output
+  radius   0.990263879      written to output
+  radius   0.990577757      written to output
+  radius   0.990891695      written to output
+  radius   0.991205633      written to output
+  radius   0.991205633      written to output
+  radius   0.991210163      written to output
+  radius   0.991524100      written to output
+  radius   0.991838038      written to output
+  radius   0.992151916      written to output
+  radius   0.992465854      written to output
+  radius   0.992779791      written to output
+  radius   0.993093729      written to output
+  radius   0.993407607      written to output
+  radius   0.993721545      written to output
+  radius   0.994035482      written to output
+  radius   0.994349420      written to output
+  radius   0.994663298      written to output
+  radius   0.994977236      written to output
+  radius   0.995291173      written to output
+  radius   0.995605111      written to output
+  radius   0.995918989      written to output
+  radius   0.996232927      written to output
+  radius   0.996546865      written to output
+  radius   0.996860802      written to output
+  radius   0.997174680      written to output
+  radius   0.997488618      written to output
+  radius   0.997802556      written to output
+  radius   0.998116493      written to output
+  radius   0.998430371      written to output
+  radius   0.998744309      written to output
+  radius   0.999058247      written to output
+  radius   0.999372184      written to output
+  radius   0.999686062      written to output
+  radius    1.00000000      written to output
+=================================================
+Creating branch file
+ 
+command:
+  jcom =            2  # modes =         1349
+  wmin =   0.379498541      wmax =    125.064369    
+  nmin =            0  nmax =            1
+  lmin =            1  lmax =         1349
+  
+  mode not found:            0           1
+ 
+command:
+  
+   1-W (mHz)
+   2-Q
+   3-PHASE VELOCITY (km/s)
+   4-GROUP VELOCITY (km/s)
+  
+  Enter selection number with min and max values
+  Complete selection with one of the following and "0 0"
+  
+  99 - exit loop with "and" search
+ 100 - exit loop with "or" search
+ 999 - quit
+  
+  
+   1-W (mHz)   0.00000000       125.099998    
+   2-Q   0.00000000       0.00000000    
+   3-PHASE VELOCITY (km/s)   0.00000000       0.00000000    
+   4-GROUP VELOCITY (km/s)   0.00000000       0.00000000    
+  
+        1349  modes selected by search
+ 
+command:
+ 
+ enter branch file or <ret> to sort:
+ 
+command:
+=================================================
+Making frechet phV kernels binary
+  enter name of q model
+  enter name of branch file
+  enter name of output frechet file
+  Enter name of input eigenfunction file
+  mode type =            2  lmin =            1  lmax =         3500
+  wmin =    5.00000007E-02  wmax =    200.050003    
+  knots nic, and noc in input=          410          86         148
+  ifanis, force=            1 F
+ Enter # of new discontinuities to add to model
+   
+ knots, nic, and noc in output         410          86         148
+ The discontinuity radii (km) are:
+           1   3630.00000       3630.00000    
+           2   5600.00000       5600.00000    
+           3   5701.00000       5701.00000    
+           4   5771.00000       5771.00000    
+           5   5971.00000       5971.00000    
+           6   6314.97119       6314.97119    
+ nrec, lmax:         7344        3500
+lmax is large.
+resetting nrec =  14000
+ ifanis=           1  nextrec=          10
+  mode not found in branch file:            0        1350
+  mode not found in branch file:            0        1351
+  mode not found in branch file:            0        1352
+  mode not found in branch file:            0        1353
+  mode not found in branch file:            0        1354
+  mode not found in branch file:            0        1355
+  mode not found in branch file:            0        1356
+  mode not found in branch file:            0        1357
+  mode not found in branch file:            0        1358
+  mode not found in branch file:            0        1359
+  mode not found in branch file:            0        1360
+  mode not found in branch file:            0        1361
+  mode not found in branch file:            0        1362
+  mode not found in branch file:            0        1363
+  mode not found in branch file:            0        1364
+  mode not found in branch file:            0        1365
+  mode not found in branch file:            0        1366
+  mode not found in branch file:            0        1367
+  mode not found in branch file:            0        1368
+  mode not found in branch file:            0        1369
+  mode not found in branch file:            0        1370
+  mode not found in branch file:            0        1371
+  mode not found in branch file:            0        1372
+  mode not found in branch file:            0        1373
+  mode not found in branch file:            0        1374
+  mode not found in branch file:            0        1375
+  mode not found in branch file:            0        1376
+  mode not found in branch file:            0        1377
+  mode not found in branch file:            0        1378
+  mode not found in branch file:            0        1379
+  mode not found in branch file:            0        1380
+  mode not found in branch file:            0        1381
+  mode not found in branch file:            0        1382
+  mode not found in branch file:            0        1383
+  mode not found in branch file:            0        1384
+  mode not found in branch file:            0        1385
+  mode not found in branch file:            0        1386
+  mode not found in branch file:            0        1387
+  mode not found in branch file:            0        1388
+  mode not found in branch file:            0        1389
+  mode not found in branch file:            0        1390
+  mode not found in branch file:            0        1391
+  mode not found in branch file:            0        1392
+  mode not found in branch file:            0        1393
+  mode not found in branch file:            0        1394
+  mode not found in branch file:            0        1395
+  mode not found in branch file:            0        1396
+  mode not found in branch file:            0        1397
+  mode not found in branch file:            0        1398
+  mode not found in branch file:            0        1399
+  mode not found in branch file:            0        1400
+  mode not found in branch file:            0        1401
+  mode not found in branch file:            0        1402
+  mode not found in branch file:            0        1403
+  mode not found in branch file:            0        1404
+  mode not found in branch file:            0        1405
+  mode not found in branch file:            0        1406
+  mode not found in branch file:            0        1407
+  mode not found in branch file:            0        1408
+  mode not found in branch file:            0        1409
+  mode not found in branch file:            0        1410
+  mode not found in branch file:            0        1411
+  mode not found in branch file:            0        1412
+  mode not found in branch file:            0        1413
+  mode not found in branch file:            0        1414
+  mode not found in branch file:            0        1415
+  mode not found in branch file:            0        1416
+  mode not found in branch file:            0        1417
+  mode not found in branch file:            0        1418
+  mode not found in branch file:            0        1419
+  mode not found in branch file:            0        1420
+  mode not found in branch file:            0        1421
+  mode not found in branch file:            0        1422
+  mode not found in branch file:            0        1423
+  mode not found in branch file:            0        1424
+  mode not found in branch file:            0        1425
+  mode not found in branch file:            0        1426
+  mode not found in branch file:            0        1427
+  mode not found in branch file:            0        1428
+  mode not found in branch file:            0        1429
+  mode not found in branch file:            0        1430
+  mode not found in branch file:            0        1431
+  mode not found in branch file:            0        1432
+  mode not found in branch file:            0        1433
+  mode not found in branch file:            0        1434
+  mode not found in branch file:            0        1435
+  mode not found in branch file:            0        1436
+  mode not found in branch file:            0        1437
+  mode not found in branch file:            0        1438
+  mode not found in branch file:            0        1439
+  mode not found in branch file:            0        1440
+  mode not found in branch file:            0        1441
+  mode not found in branch file:            0        1442
+  mode not found in branch file:            0        1443
+  mode not found in branch file:            0        1444
+  mode not found in branch file:            0        1445
+  mode not found in branch file:            0        1446
+  mode not found in branch file:            0        1447
+  mode not found in branch file:            0        1448
+  mode not found in branch file:            0        1449
+  mode not found in branch file:            0        1450
+  mode not found in branch file:            0        1451
+  mode not found in branch file:            0        1452
+  mode not found in branch file:            0        1453
+  mode not found in branch file:            0        1454
+  mode not found in branch file:            0        1455
+  mode not found in branch file:            0        1456
+  mode not found in branch file:            0        1457
+  mode not found in branch file:            0        1458
+  mode not found in branch file:            0        1459
+  mode not found in branch file:            0        1460
+  mode not found in branch file:            0        1461
+  mode not found in branch file:            0        1462
+  mode not found in branch file:            0        1463
+  mode not found in branch file:            0        1464
+  mode not found in branch file:            0        1465
+  mode not found in branch file:            0        1466
+  mode not found in branch file:            0        1467
+  mode not found in branch file:            0        1468
+  mode not found in branch file:            0        1469
+  mode not found in branch file:            0        1470
+  mode not found in branch file:            0        1471
+  mode not found in branch file:            0        1472
+  mode not found in branch file:            0        1473
+  mode not found in branch file:            0        1474
+  mode not found in branch file:            0        1475
+  mode not found in branch file:            0        1476
+  mode not found in branch file:            0        1477
+  mode not found in branch file:            0        1478
+  mode not found in branch file:            0        1479
+  mode not found in branch file:            0        1480
+  mode not found in branch file:            0        1481
+  mode not found in branch file:            0        1482
+  mode not found in branch file:            0        1483
+  mode not found in branch file:            0        1484
+  mode not found in branch file:            0        1485
+  mode not found in branch file:            0        1486
+  mode not found in branch file:            0        1487
+  mode not found in branch file:            0        1488
+  mode not found in branch file:            0        1489
+  mode not found in branch file:            0        1490
+  mode not found in branch file:            0        1491
+  mode not found in branch file:            0        1492
+  mode not found in branch file:            0        1493
+  mode not found in branch file:            0        1494
+  mode not found in branch file:            0        1495
+  mode not found in branch file:            0        1496
+  mode not found in branch file:            0        1497
+  mode not found in branch file:            0        1498
+  mode not found in branch file:            0        1499
+  mode not found in branch file:            0        1500
+  mode not found in branch file:            0        1501
+  mode not found in branch file:            0        1502
+  mode not found in branch file:            0        1503
+  mode not found in branch file:            0        1504
+  mode not found in branch file:            0        1505
+  mode not found in branch file:            0        1506
+  mode not found in branch file:            0        1507
+  mode not found in branch file:            0        1508
+  mode not found in branch file:            0        1509
+  mode not found in branch file:            0        1510
+  mode not found in branch file:            0        1511
+  mode not found in branch file:            0        1512
+  mode not found in branch file:            0        1513
+  mode not found in branch file:            0        1514
+  mode not found in branch file:            0        1515
+  mode not found in branch file:            0        1516
+  mode not found in branch file:            0        1517
+  mode not found in branch file:            0        1518
+  mode not found in branch file:            0        1519
+  mode not found in branch file:            0        1520
+  mode not found in branch file:            0        1521
+  mode not found in branch file:            0        1522
+  mode not found in branch file:            0        1523
+  mode not found in branch file:            0        1524
+  mode not found in branch file:            0        1525
+  mode not found in branch file:            0        1526
+  mode not found in branch file:            0        1527
+  mode not found in branch file:            0        1528
+  mode not found in branch file:            0        1529
+  mode not found in branch file:            0        1530
+  mode not found in branch file:            0        1531
+  mode not found in branch file:            0        1532
+  mode not found in branch file:            0        1533
+  mode not found in branch file:            0        1534
+  mode not found in branch file:            0        1535
+  mode not found in branch file:            0        1536
+  mode not found in branch file:            0        1537
+  mode not found in branch file:            0        1538
+  mode not found in branch file:            0        1539
+  mode not found in branch file:            0        1540
+  mode not found in branch file:            0        1541
+  mode not found in branch file:            0        1542
+  mode not found in branch file:            0        1543
+  mode not found in branch file:            0        1544
+  mode not found in branch file:            0        1545
+  mode not found in branch file:            0        1546
+  mode not found in branch file:            0        1547
+  mode not found in branch file:            0        1548
+  mode not found in branch file:            0        1549
+  mode not found in branch file:            0        1550
+  mode not found in branch file:            0        1551
+  mode not found in branch file:            0        1552
+  mode not found in branch file:            0        1553
+  mode not found in branch file:            0        1554
+  mode not found in branch file:            0        1555
+  mode not found in branch file:            0        1556
+  mode not found in branch file:            0        1557
+  mode not found in branch file:            0        1558
+  mode not found in branch file:            0        1559
+  mode not found in branch file:            0        1560
+  mode not found in branch file:            0        1561
+  mode not found in branch file:            0        1562
+  mode not found in branch file:            0        1563
+  mode not found in branch file:            0        1564
+  mode not found in branch file:            0        1565
+  mode not found in branch file:            0        1566
+  mode not found in branch file:            0        1567
+  mode not found in branch file:            0        1568
+  mode not found in branch file:            0        1569
+  mode not found in branch file:            0        1570
+  mode not found in branch file:            0        1571
+  mode not found in branch file:            0        1572
+  mode not found in branch file:            0        1573
+  mode not found in branch file:            0        1574
+  mode not found in branch file:            0        1575
+  mode not found in branch file:            0        1576
+  mode not found in branch file:            0        1577
+  mode not found in branch file:            0        1578
+  mode not found in branch file:            0        1579
+  mode not found in branch file:            0        1580
+  mode not found in branch file:            0        1581
+  mode not found in branch file:            0        1582
+  mode not found in branch file:            0        1583
+  mode not found in branch file:            0        1584
+  mode not found in branch file:            0        1585
+  mode not found in branch file:            0        1586
+  mode not found in branch file:            0        1587
+  mode not found in branch file:            0        1588
+  mode not found in branch file:            0        1589
+  mode not found in branch file:            0        1590
+  mode not found in branch file:            0        1591
+  mode not found in branch file:            0        1592
+  mode not found in branch file:            0        1593
+  mode not found in branch file:            0        1594
+  mode not found in branch file:            0        1595
+  mode not found in branch file:            0        1596
+  mode not found in branch file:            0        1597
+  mode not found in branch file:            0        1598
+  mode not found in branch file:            0        1599
+  mode not found in branch file:            0        1600
+  mode not found in branch file:            0        1601
+  mode not found in branch file:            0        1602
+  mode not found in branch file:            0        1603
+  mode not found in branch file:            0        1604
+  mode not found in branch file:            0        1605
+  mode not found in branch file:            0        1606
+  mode not found in branch file:            0        1607
+  mode not found in branch file:            0        1608
+  mode not found in branch file:            0        1609
+  mode not found in branch file:            0        1610
+  mode not found in branch file:            0        1611
+  mode not found in branch file:            0        1612
+  mode not found in branch file:            0        1613
+  mode not found in branch file:            0        1614
+  mode not found in branch file:            0        1615
+  mode not found in branch file:            0        1616
+  mode not found in branch file:            0        1617
+  mode not found in branch file:            0        1618
+  mode not found in branch file:            0        1619
+  mode not found in branch file:            0        1620
+  mode not found in branch file:            0        1621
+  mode not found in branch file:            0        1622
+  mode not found in branch file:            0        1623
+  mode not found in branch file:            0        1624
+  mode not found in branch file:            0        1625
+  mode not found in branch file:            0        1626
+  mode not found in branch file:            0        1627
+  mode not found in branch file:            0        1628
+  mode not found in branch file:            0        1629
+  mode not found in branch file:            0        1630
+  mode not found in branch file:            0        1631
+  mode not found in branch file:            0        1632
+  mode not found in branch file:            0        1633
+  mode not found in branch file:            0        1634
+  mode not found in branch file:            0        1635
+  mode not found in branch file:            0        1636
+  mode not found in branch file:            0        1637
+  mode not found in branch file:            0        1638
+  mode not found in branch file:            0        1639
+  mode not found in branch file:            0        1640
+  mode not found in branch file:            0        1641
+  mode not found in branch file:            0        1642
+  mode not found in branch file:            0        1643
+  mode not found in branch file:            0        1644
+  mode not found in branch file:            0        1645
+  mode not found in branch file:            0        1646
+  mode not found in branch file:            0        1647
+  mode not found in branch file:            0        1648
+  mode not found in branch file:            0        1649
+  mode not found in branch file:            0        1650
+  mode not found in branch file:            0        1651
+  mode not found in branch file:            0        1652
+  mode not found in branch file:            0        1653
+  mode not found in branch file:            0        1654
+  mode not found in branch file:            0        1655
+  mode not found in branch file:            0        1656
+  mode not found in branch file:            0        1657
+  mode not found in branch file:            0        1658
+  mode not found in branch file:            0        1659
+  mode not found in branch file:            0        1660
+  mode not found in branch file:            0        1661
+  mode not found in branch file:            0        1662
+  mode not found in branch file:            0        1663
+  mode not found in branch file:            0        1664
+  mode not found in branch file:            0        1665
+  mode not found in branch file:            0        1666
+  mode not found in branch file:            0        1667
+  mode not found in branch file:            0        1668
+  mode not found in branch file:            0        1669
+  mode not found in branch file:            0        1670
+  mode not found in branch file:            0        1671
+  mode not found in branch file:            0        1672
+  mode not found in branch file:            0        1673
+  mode not found in branch file:            0        1674
+  mode not found in branch file:            0        1675
+  mode not found in branch file:            0        1676
+  mode not found in branch file:            0        1677
+  mode not found in branch file:            0        1678
+  mode not found in branch file:            0        1679
+  mode not found in branch file:            0        1680
+  mode not found in branch file:            0        1681
+  mode not found in branch file:            0        1682
+  mode not found in branch file:            0        1683
+  mode not found in branch file:            0        1684
+  mode not found in branch file:            0        1685
+  mode not found in branch file:            0        1686
+  mode not found in branch file:            0        1687
+  mode not found in branch file:            0        1688
+  mode not found in branch file:            0        1689
+  mode not found in branch file:            0        1690
+  mode not found in branch file:            0        1691
+  mode not found in branch file:            0        1692
+  mode not found in branch file:            0        1693
+  mode not found in branch file:            0        1694
+  mode not found in branch file:            0        1695
+  mode not found in branch file:            0        1696
+  mode not found in branch file:            0        1697
+  mode not found in branch file:            0        1698
+  mode not found in branch file:            0        1699
+  mode not found in branch file:            0        1700
+  mode not found in branch file:            0        1701
+  mode not found in branch file:            0        1702
+  mode not found in branch file:            0        1703
+  mode not found in branch file:            0        1704
+  mode not found in branch file:            0        1705
+  mode not found in branch file:            0        1706
+  mode not found in branch file:            0        1707
+  mode not found in branch file:            0        1708
+  mode not found in branch file:            0        1709
+  mode not found in branch file:            0        1710
+  mode not found in branch file:            0        1711
+  mode not found in branch file:            0        1712
+  mode not found in branch file:            0        1713
+  mode not found in branch file:            0        1714
+  mode not found in branch file:            0        1715
+  mode not found in branch file:            0        1716
+  mode not found in branch file:            0        1717
+  mode not found in branch file:            0        1718
+  mode not found in branch file:            0        1719
+  mode not found in branch file:            0        1720
+  mode not found in branch file:            0        1721
+  mode not found in branch file:            0        1722
+  mode not found in branch file:            0        1723
+  mode not found in branch file:            0        1724
+  mode not found in branch file:            0        1725
+  mode not found in branch file:            0        1726
+  mode not found in branch file:            0        1727
+  mode not found in branch file:            0        1728
+  mode not found in branch file:            0        1729
+  mode not found in branch file:            0        1730
+  mode not found in branch file:            0        1731
+  mode not found in branch file:            0        1732
+  mode not found in branch file:            0        1733
+  mode not found in branch file:            0        1734
+  mode not found in branch file:            0        1735
+  mode not found in branch file:            0        1736
+  mode not found in branch file:            0        1737
+  mode not found in branch file:            0        1738
+  mode not found in branch file:            0        1739
+  mode not found in branch file:            0        1740
+  mode not found in branch file:            0        1741
+  mode not found in branch file:            0        1742
+  mode not found in branch file:            0        1743
+  mode not found in branch file:            0        1744
+  mode not found in branch file:            0        1745
+  mode not found in branch file:            0        1746
+  mode not found in branch file:            0        1747
+  mode not found in branch file:            0        1748
+  mode not found in branch file:            0        1749
+  mode not found in branch file:            0        1750
+  mode not found in branch file:            0        1751
+  mode not found in branch file:            0        1752
+  mode not found in branch file:            0        1753
+  mode not found in branch file:            0        1754
+  mode not found in branch file:            0        1755
+  mode not found in branch file:            0        1756
+  mode not found in branch file:            0        1757
+  mode not found in branch file:            0        1758
+  mode not found in branch file:            0        1759
+  mode not found in branch file:            0        1760
+  mode not found in branch file:            0        1761
+  mode not found in branch file:            0        1762
+  mode not found in branch file:            0        1763
+  mode not found in branch file:            0        1764
+  mode not found in branch file:            0        1765
+  mode not found in branch file:            0        1766
+  mode not found in branch file:            0        1767
+  mode not found in branch file:            0        1768
+  mode not found in branch file:            0        1769
+  mode not found in branch file:            0        1770
+  mode not found in branch file:            0        1771
+  mode not found in branch file:            0        1772
+  mode not found in branch file:            0        1773
+  mode not found in branch file:            0        1774
+  mode not found in branch file:            0        1775
+  mode not found in branch file:            0        1776
+  mode not found in branch file:            0        1777
+  mode not found in branch file:            0        1778
+  mode not found in branch file:            0        1779
+  mode not found in branch file:            0        1780
+  mode not found in branch file:            0        1781
+  mode not found in branch file:            0        1782
+  mode not found in branch file:            0        1783
+  mode not found in branch file:            0        1784
+  mode not found in branch file:            0        1785
+  mode not found in branch file:            0        1786
+  mode not found in branch file:            0        1787
+  mode not found in branch file:            0        1788
+  mode not found in branch file:            0        1789
+  mode not found in branch file:            0        1790
+  mode not found in branch file:            0        1791
+  mode not found in branch file:            0        1792
+  mode not found in branch file:            0        1793
+  mode not found in branch file:            0        1794
+  mode not found in branch file:            0        1795
+  mode not found in branch file:            0        1796
+  mode not found in branch file:            0        1797
+  mode not found in branch file:            0        1798
+  mode not found in branch file:            0        1799
+  mode not found in branch file:            0        1800
+  mode not found in branch file:            0        1801
+  mode not found in branch file:            0        1802
+  mode not found in branch file:            0        1803
+  mode not found in branch file:            0        1804
+  mode not found in branch file:            0        1805
+  mode not found in branch file:            0        1806
+  mode not found in branch file:            0        1807
+  mode not found in branch file:            0        1808
+  mode not found in branch file:            0        1809
+  mode not found in branch file:            0        1810
+  mode not found in branch file:            0        1811
+  mode not found in branch file:            0        1812
+  mode not found in branch file:            0        1813
+  mode not found in branch file:            0        1814
+  mode not found in branch file:            0        1815
+  mode not found in branch file:            0        1816
+  mode not found in branch file:            0        1817
+  mode not found in branch file:            0        1818
+  mode not found in branch file:            0        1819
+  mode not found in branch file:            0        1820
+  mode not found in branch file:            0        1821
+  mode not found in branch file:            0        1822
+  mode not found in branch file:            0        1823
+  mode not found in branch file:            0        1824
+  mode not found in branch file:            0        1825
+  mode not found in branch file:            0        1826
+  mode not found in branch file:            0        1827
+  mode not found in branch file:            0        1828
+  mode not found in branch file:            0        1829
+  mode not found in branch file:            0        1830
+  mode not found in branch file:            0        1831
+  mode not found in branch file:            0        1832
+  mode not found in branch file:            0        1833
+  mode not found in branch file:            0        1834
+  mode not found in branch file:            0        1835
+  mode not found in branch file:            0        1836
+  mode not found in branch file:            0        1837
+  mode not found in branch file:            0        1838
+  mode not found in branch file:            0        1839
+  mode not found in branch file:            0        1840
+  mode not found in branch file:            0        1841
+  mode not found in branch file:            0        1842
+  mode not found in branch file:            0        1843
+  mode not found in branch file:            0        1844
+  mode not found in branch file:            0        1845
+  mode not found in branch file:            0        1846
+  mode not found in branch file:            0        1847
+  mode not found in branch file:            0        1848
+  mode not found in branch file:            0        1849
+  mode not found in branch file:            0        1850
+  mode not found in branch file:            0        1851
+  mode not found in branch file:            0        1852
+  mode not found in branch file:            0        1853
+  mode not found in branch file:            0        1854
+  mode not found in branch file:            0        1855
+  mode not found in branch file:            0        1856
+  mode not found in branch file:            0        1857
+  mode not found in branch file:            0        1858
+  mode not found in branch file:            0        1859
+  mode not found in branch file:            0        1860
+  mode not found in branch file:            0        1861
+  mode not found in branch file:            0        1862
+  mode not found in branch file:            0        1863
+  mode not found in branch file:            0        1864
+  mode not found in branch file:            0        1865
+  mode not found in branch file:            0        1866
+  mode not found in branch file:            0        1867
+  mode not found in branch file:            0        1868
+  mode not found in branch file:            0        1869
+  mode not found in branch file:            0        1870
+  mode not found in branch file:            0        1871
+  mode not found in branch file:            0        1872
+  mode not found in branch file:            0        1873
+  mode not found in branch file:            0        1874
+  mode not found in branch file:            0        1875
+  mode not found in branch file:            0        1876
+  mode not found in branch file:            0        1877
+  mode not found in branch file:            0        1878
+  mode not found in branch file:            0        1879
+  mode not found in branch file:            0        1880
+  mode not found in branch file:            0        1881
+  mode not found in branch file:            0        1882
+  mode not found in branch file:            0        1883
+  mode not found in branch file:            0        1884
+  mode not found in branch file:            0        1885
+  mode not found in branch file:            0        1886
+  mode not found in branch file:            0        1887
+  mode not found in branch file:            0        1888
+  mode not found in branch file:            0        1889
+  mode not found in branch file:            0        1890
+  mode not found in branch file:            0        1891
+  mode not found in branch file:            0        1892
+  mode not found in branch file:            0        1893
+  mode not found in branch file:            0        1894
+  mode not found in branch file:            0        1895
+  mode not found in branch file:            0        1896
+  mode not found in branch file:            0        1897
+  mode not found in branch file:            0        1898
+  mode not found in branch file:            0        1899
+  mode not found in branch file:            0        1900
+  mode not found in branch file:            0        1901
+  mode not found in branch file:            0        1902
+  mode not found in branch file:            0        1903
+  mode not found in branch file:            0        1904
+  mode not found in branch file:            0        1905
+  mode not found in branch file:            0        1906
+  mode not found in branch file:            0        1907
+  mode not found in branch file:            0        1908
+  mode not found in branch file:            0        1909
+  mode not found in branch file:            0        1910
+  mode not found in branch file:            0        1911
+  mode not found in branch file:            0        1912
+  mode not found in branch file:            0        1913
+  mode not found in branch file:            0        1914
+  mode not found in branch file:            0        1915
+  mode not found in branch file:            0        1916
+  mode not found in branch file:            0        1917
+  mode not found in branch file:            0        1918
+  mode not found in branch file:            0        1919
+  mode not found in branch file:            0        1920
+  mode not found in branch file:            0        1921
+  mode not found in branch file:            0        1922
+  mode not found in branch file:            0        1923
+  mode not found in branch file:            0        1924
+  mode not found in branch file:            0        1925
+  mode not found in branch file:            0        1926
+  mode not found in branch file:            0        1927
+  mode not found in branch file:            0        1928
+  mode not found in branch file:            0        1929
+  mode not found in branch file:            0        1930
+  mode not found in branch file:            0        1931
+  mode not found in branch file:            0        1932
+  mode not found in branch file:            0        1933
+  mode not found in branch file:            0        1934
+  mode not found in branch file:            0        1935
+  mode not found in branch file:            0        1936
+  mode not found in branch file:            0        1937
+  mode not found in branch file:            0        1938
+  mode not found in branch file:            0        1939
+  mode not found in branch file:            0        1940
+  mode not found in branch file:            0        1941
+  mode not found in branch file:            0        1942
+  mode not found in branch file:            0        1943
+  mode not found in branch file:            0        1944
+  mode not found in branch file:            0        1945
+  mode not found in branch file:            0        1946
+  mode not found in branch file:            0        1947
+  mode not found in branch file:            0        1948
+  mode not found in branch file:            0        1949
+  mode not found in branch file:            0        1950
+  mode not found in branch file:            0        1951
+  mode not found in branch file:            0        1952
+  mode not found in branch file:            0        1953
+  mode not found in branch file:            0        1954
+  mode not found in branch file:            0        1955
+  mode not found in branch file:            0        1956
+  mode not found in branch file:            0        1957
+  mode not found in branch file:            0        1958
+  mode not found in branch file:            0        1959
+  mode not found in branch file:            0        1960
+  mode not found in branch file:            0        1961
+  mode not found in branch file:            0        1962
+  mode not found in branch file:            0        1963
+  mode not found in branch file:            0        1964
+  mode not found in branch file:            0        1965
+  mode not found in branch file:            0        1966
+  mode not found in branch file:            0        1967
+  mode not found in branch file:            0        1968
+  mode not found in branch file:            0        1969
+  mode not found in branch file:            0        1970
+  mode not found in branch file:            0        1971
+  mode not found in branch file:            0        1972
+  mode not found in branch file:            0        1973
+  mode not found in branch file:            0        1974
+  mode not found in branch file:            0        1975
+  mode not found in branch file:            0        1976
+  mode not found in branch file:            0        1977
+  mode not found in branch file:            0        1978
+  mode not found in branch file:            0        1979
+  mode not found in branch file:            0        1980
+  mode not found in branch file:            0        1981
+  mode not found in branch file:            0        1982
+  mode not found in branch file:            0        1983
+  mode not found in branch file:            0        1984
+  mode not found in branch file:            0        1985
+  mode not found in branch file:            0        1986
+  mode not found in branch file:            0        1987
+  mode not found in branch file:            0        1988
+  mode not found in branch file:            0        1989
+  mode not found in branch file:            0        1990
+  mode not found in branch file:            0        1991
+  mode not found in branch file:            0        1992
+  mode not found in branch file:            0        1993
+  mode not found in branch file:            0        1994
+  mode not found in branch file:            0        1995
+  mode not found in branch file:            0        1996
+  mode not found in branch file:            0        1997
+  mode not found in branch file:            0        1998
+  mode not found in branch file:            0        1999
+  mode not found in branch file:            0        2000
+  mode not found in branch file:            0        2001
+  mode not found in branch file:            0        2002
+  mode not found in branch file:            0        2003
+  mode not found in branch file:            0        2004
+  mode not found in branch file:            0        2005
+  mode not found in branch file:            0        2006
+  mode not found in branch file:            0        2007
+  mode not found in branch file:            0        2008
+  mode not found in branch file:            0        2009
+  mode not found in branch file:            0        2010
+  mode not found in branch file:            0        2011
+  mode not found in branch file:            0        2012
+  mode not found in branch file:            0        2013
+  mode not found in branch file:            0        2014
+  mode not found in branch file:            0        2015
+  mode not found in branch file:            0        2016
+  mode not found in branch file:            0        2017
+  mode not found in branch file:            0        2018
+  mode not found in branch file:            0        2019
+  mode not found in branch file:            0        2020
+  mode not found in branch file:            0        2021
+  mode not found in branch file:            0        2022
+  mode not found in branch file:            0        2023
+  mode not found in branch file:            0        2024
+  mode not found in branch file:            0        2025
+  mode not found in branch file:            0        2026
+  mode not found in branch file:            0        2027
+  mode not found in branch file:            0        2028
+  mode not found in branch file:            0        2029
+  mode not found in branch file:            0        2030
+  mode not found in branch file:            0        2031
+  mode not found in branch file:            0        2032
+  mode not found in branch file:            0        2033
+  mode not found in branch file:            0        2034
+  mode not found in branch file:            0        2035
+  mode not found in branch file:            0        2036
+  mode not found in branch file:            0        2037
+  mode not found in branch file:            0        2038
+  mode not found in branch file:            0        2039
+  mode not found in branch file:            0        2040
+  mode not found in branch file:            0        2041
+  mode not found in branch file:            0        2042
+  mode not found in branch file:            0        2043
+  mode not found in branch file:            0        2044
+  mode not found in branch file:            0        2045
+  mode not found in branch file:            0        2046
+  mode not found in branch file:            0        2047
+  mode not found in branch file:            0        2048
+  mode not found in branch file:            0        2049
+  mode not found in branch file:            0        2050
+  mode not found in branch file:            0        2051
+  mode not found in branch file:            0        2052
+  mode not found in branch file:            0        2053
+  mode not found in branch file:            0        2054
+  mode not found in branch file:            0        2055
+  mode not found in branch file:            0        2056
+  mode not found in branch file:            0        2057
+  mode not found in branch file:            0        2058
+  mode not found in branch file:            0        2059
+  mode not found in branch file:            0        2060
+  mode not found in branch file:            0        2061
+  mode not found in branch file:            0        2062
+  mode not found in branch file:            0        2063
+  mode not found in branch file:            0        2064
+  mode not found in branch file:            0        2065
+  mode not found in branch file:            0        2066
+  mode not found in branch file:            0        2067
+  mode not found in branch file:            0        2068
+  mode not found in branch file:            0        2069
+  mode not found in branch file:            0        2070
+  mode not found in branch file:            0        2071
+  mode not found in branch file:            0        2072
+  mode not found in branch file:            0        2073
+  mode not found in branch file:            0        2074
+  mode not found in branch file:            0        2075
+  mode not found in branch file:            0        2076
+  mode not found in branch file:            0        2077
+  mode not found in branch file:            0        2078
+  mode not found in branch file:            0        2079
+  mode not found in branch file:            0        2080
+  mode not found in branch file:            0        2081
+  mode not found in branch file:            0        2082
+  mode not found in branch file:            0        2083
+  mode not found in branch file:            0        2084
+  mode not found in branch file:            0        2085
+  mode not found in branch file:            0        2086
+  mode not found in branch file:            0        2087
+  mode not found in branch file:            0        2088
+  mode not found in branch file:            0        2089
+  mode not found in branch file:            0        2090
+  mode not found in branch file:            0        2091
+  mode not found in branch file:            0        2092
+  mode not found in branch file:            0        2093
+  mode not found in branch file:            0        2094
+  mode not found in branch file:            0        2095
+  mode not found in branch file:            0        2096
+  mode not found in branch file:            0        2097
+  mode not found in branch file:            0        2098
+  mode not found in branch file:            0        2099
+  mode not found in branch file:            0        2100
+  mode not found in branch file:            0        2101
+  mode not found in branch file:            0        2102
+  mode not found in branch file:            0        2103
+  mode not found in branch file:            0        2104
+  mode not found in branch file:            0        2105
+  mode not found in branch file:            0        2106
+  mode not found in branch file:            0        2107
+  mode not found in branch file:            0        2108
+  mode not found in branch file:            0        2109
+  mode not found in branch file:            0        2110
+  mode not found in branch file:            0        2111
+  mode not found in branch file:            0        2112
+  mode not found in branch file:            0        2113
+  mode not found in branch file:            0        2114
+  mode not found in branch file:            0        2115
+  mode not found in branch file:            0        2116
+  mode not found in branch file:            0        2117
+  mode not found in branch file:            0        2118
+  mode not found in branch file:            0        2119
+  mode not found in branch file:            0        2120
+  mode not found in branch file:            0        2121
+  mode not found in branch file:            0        2122
+  mode not found in branch file:            0        2123
+  mode not found in branch file:            0        2124
+  mode not found in branch file:            0        2125
+  mode not found in branch file:            0        2126
+  mode not found in branch file:            0        2127
+  mode not found in branch file:            0        2128
+  mode not found in branch file:            0        2129
+  mode not found in branch file:            0        2130
+  mode not found in branch file:            0        2131
+  mode not found in branch file:            0        2132
+  mode not found in branch file:            0        2133
+  mode not found in branch file:            0        2134
+  mode not found in branch file:            0        2135
+  mode not found in branch file:            0        2136
+  mode not found in branch file:            0        2137
+  mode not found in branch file:            0        2138
+  mode not found in branch file:            0        2139
+  mode not found in branch file:            0        2140
+  mode not found in branch file:            0        2141
+  mode not found in branch file:            0        2142
+  mode not found in branch file:            0        2143
+  mode not found in branch file:            0        2144
+  mode not found in branch file:            0        2145
+  mode not found in branch file:            0        2146
+  mode not found in branch file:            0        2147
+  mode not found in branch file:            0        2148
+  mode not found in branch file:            0        2149
+  mode not found in branch file:            0        2150
+  mode not found in branch file:            0        2151
+  mode not found in branch file:            0        2152
+  mode not found in branch file:            0        2153
+  mode not found in branch file:            0        2154
+  mode not found in branch file:            0        2155
+  mode not found in branch file:            0        2156
+  mode not found in branch file:            0        2157
+  mode not found in branch file:            0        2158
+  mode not found in branch file:            0        2159
+  mode not found in branch file:            0        2160
+  mode not found in branch file:            0        2161
+  mode not found in branch file:            0        2162
+  mode not found in branch file:            0        2163
+  mode not found in branch file:            0        2164
+  mode not found in branch file:            0        2165
+  mode not found in branch file:            0        2166
+  mode not found in branch file:            0        2167
+  mode not found in branch file:            0        2168
+  mode not found in branch file:            0        2169
+  mode not found in branch file:            0        2170
+  mode not found in branch file:            0        2171
+  mode not found in branch file:            0        2172
+  mode not found in branch file:            0        2173
+  mode not found in branch file:            0        2174
+  mode not found in branch file:            0        2175
+  mode not found in branch file:            0        2176
+  mode not found in branch file:            0        2177
+  mode not found in branch file:            0        2178
+  mode not found in branch file:            0        2179
+  mode not found in branch file:            0        2180
+  mode not found in branch file:            0        2181
+  mode not found in branch file:            0        2182
+  mode not found in branch file:            0        2183
+  mode not found in branch file:            0        2184
+  mode not found in branch file:            0        2185
+  mode not found in branch file:            0        2186
+  mode not found in branch file:            0        2187
+  mode not found in branch file:            0        2188
+  mode not found in branch file:            0        2189
+  mode not found in branch file:            0        2190
+  mode not found in branch file:            0        2191
+  mode not found in branch file:            0        2192
+  mode not found in branch file:            0        2193
+  mode not found in branch file:            0        2194
+  mode not found in branch file:            0        2195
+  mode not found in branch file:            0        2196
+  mode not found in branch file:            0        2197
+  mode not found in branch file:            0        2198
+  mode not found in branch file:            0        2199
+  Enter name of input eigenfunction file
+  branch completed:            1
+  branch completed:            2
+=================================================
+Writing phV kernel files for each period
+Done velocity calculation, cleaning up...

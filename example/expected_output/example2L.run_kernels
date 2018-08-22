@@ -1,0 +1,128 @@
+#!/bin/csh
+#
+set xdir=/Users/zeilon/Work/codes/CADMINEOS/bin
+#
+echo "=================================================" > example2L.log
+echo "Stripping mineos" >> example2L.log
+#
+$xdir/mineos_strip <<! >> example2L.log
+example2L.strip
+example2L_0.eig_fix
+example2L_1.eig_fix
+example2L_3.eig_fix
+example2L_4.eig_fix
+example2L_22.eig
+
+!
+#
+echo "=================================================" >> example2L.log
+echo "Done stripping, now calculating tables" >> example2L.log
+#
+$xdir/mineos_table <<! >> example2L.log
+example2L.table
+40000
+0 125.1
+0 3500
+example2L.q
+example2L.strip
+
+!
+#
+echo "=================================================" >> example2L.log
+echo "Creating branch file" >> example2L.log
+#
+# to create branch file needed for frechet derivatives:
+# second line says stop searching (or could add more parameters to search)
+# 3rd line gives frequency range to search in (mHz)
+#
+$xdir/plot_wk <<! >> example2L.log
+table example2L.table_hdr
+search
+1 0.0 125.10
+99 0 0
+branch
+
+quit
+!
+#
+echo "=================================================" >> example2L.log
+echo "Making frechet phV kernels binary" >> example2L.log
+#
+rm example2L.cvfrechet
+$xdir/frechet_cv <<! >> example2L.log
+/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod
+example2L.table_hdr.branch
+example2L.cvfrechet
+example2L_0.eig_fix
+0
+example2L_1.eig_fix
+example2L_3.eig_fix
+example2L_4.eig_fix
+example2L_22.eig
+
+!
+#
+echo "=================================================" >> example2L.log
+echo "Writing phV kernel files for each period">> example2L.log
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_8.0s
+8.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_11.0s
+11.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_15.0s
+15.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_21.0s
+21.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_29.0s
+29.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_39.0s
+39.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_54.0s
+54.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_74.0s
+74.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_102.0s
+102.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2L.cvfrechet
+example2L_cvfrechet_140.0s
+140.00
+!
+#
+echo "Done velocity calculation, cleaning up..." >> example2L.log

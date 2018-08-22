@@ -56,7 +56,7 @@ ifplot = true;    % make some helpful plots
 ifdelete = false; % don't delete the files at the end - you may want to see what they are!
 % need some ID for this run (useful if you intend to run in parallel - each
 % run gets a unique ID so that it can be computed simultaneously
-ID = 'example1';
+ID = 'example2';
 
 % First do Rayleigh waves, and get phase velocity kernels
 R_or_L = 'R';

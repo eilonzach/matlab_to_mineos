@@ -1,0 +1,120 @@
+#!/bin/csh
+#
+set xdir=/Users/zeilon/Work/codes/CADMINEOS/bin
+#
+echo "=================================================" > example2R.log
+echo "Stripping mineos" >> example2R.log
+#
+$xdir/mineos_strip <<! >> example2R.log
+example2R.strip
+example2R_0.eig
+
+!
+#
+echo "=================================================" >> example2R.log
+echo "Done stripping, now calculating tables" >> example2R.log
+#
+$xdir/mineos_table <<! >> example2R.log
+example2R.table
+40000
+0 125.1
+0 3000
+example2R.q
+example2R.strip
+
+!
+#
+echo "=================================================" >> example2R.log
+echo "Creating branch file" >> example2R.log
+#
+# to create branch file needed for frechet derivatives:
+# second line says stop searching (or could add more parameters to search)
+# 3rd line gives frequency range to search in (mHz)
+#
+$xdir/plot_wk <<! >> example2R.log
+table example2R.table_hdr
+search
+1 0.0 125.10
+99 0 0
+branch
+
+quit
+!
+#
+echo "=================================================" >> example2R.log
+echo "Making frechet phV kernels binary" >> example2R.log
+#
+rm example2R.cvfrechet
+$xdir/frechet_cv <<! >> example2R.log
+/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod
+example2R.table_hdr.branch
+example2R.cvfrechet
+example2R_0.eig
+0
+
+!
+#
+echo "=================================================" >> example2R.log
+echo "Writing phV kernel files for each period">> example2R.log
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_8.0s
+8.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_11.0s
+11.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_15.0s
+15.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_21.0s
+21.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_29.0s
+29.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_39.0s
+39.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_54.0s
+54.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_74.0s
+74.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_102.0s
+102.00
+!
+#
+$xdir/draw_frechet_gv <<!
+example2R.cvfrechet
+example2R_cvfrechet_140.0s
+140.00
+!
+#
+echo "Done velocity calculation, cleaning up..." >> example2R.log
