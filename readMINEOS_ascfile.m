@@ -1,5 +1,5 @@
 function [modes_done,last_fundamental_l,first_fundamental_l,lowest_fundamental_period] = readMINEOS_ascfile(ascfile,ifplot,skiplines)
-% [modes_done,last_fundamental_l,first_fundamental_l,lowest_fundamental_period] = readMINEOS_ascfile(ascfile,ifplot)
+% [modes_done,last_fundamental_l,first_fundamental_l,lowest_fundamental_period] = readMINEOS_ascfile(ascfile,ifplot,skiplines)
 %  
 %  Function to read MINEOS ascii output file (ascfile) for the details of
 %  the mode integration, specifically the first and last mode numbers

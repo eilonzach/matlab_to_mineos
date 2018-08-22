@@ -1,46 +1,57 @@
-function [phV,grV,eigfiles_fix] = run_mineos(model,swperiods,R_or_L,ID,ifdelete,ifplot,ifverbose)
-% [phV,grV] = run_mineos(model,swperiods,R_or_L,ID,ifdelete,ifplot,ifverbose)
+function [phV,grV,eigfiles_fix] = run_mineos(model,swperiods,par_mineos,ifdelete,ifplot,ifverbose)
+% [phV,grV] = run_mineos(model,swperiods,par_mineos,ifdelete,ifplot,ifverbose)
 % 
 % Function to run the MINEOS for a given model and extract the phase
 % velocities at a bunch of input periods. If you keep the output files
 % around (ifdelete==false) then they can be used to calculate perturbation
 % kernels with the complementary run_kernelcalc.m script
+tic1 = now;
 
-tic
-if nargin < 3 || isempty(R_or_L)
-    R_or_L = 'R';
+if nargin < 3 || isempty(par_mineos)
+    par_mineos = [];
 end
-if nargin < 4 || isempty(ID)
-    ID = 'eg';
-end
-if nargin < 5 || isempty(ifdelete)
+if nargin < 4 || isempty(ifdelete)
     ifdelete = true;
 end
-if nargin < 6 || isempty(ifplot)
+if nargin < 5 || isempty(ifplot)
     ifplot = false;
 end
-if nargin < 7 || isempty(ifverbose)
+if nargin < 6 || isempty(ifverbose)
     ifverbose = true;
 end
 
-l_increment_standard = 2;
-l_increment_failed = 5;
-
-
+%% parameters
+% default parameters
+parm = struct('R_or_L','R',...
+              'ID','example',...
+              'lmin',0,...            % minimum angular order
+              'lmax',3500,...         % expected max angular order
+              'fmin',0.05,...         % min frequency (mHz)
+              'fmax',200.05,...       % max frequency (mHz) - gets reset by min period 
+              'l_increment_standard',2,... % 
+              'l_increment_failed',5,...
+              'qmodpath','/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod');
+% replace default values with user values, where appropriate. 
+fns = fieldnames(par_mineos);
+for ii = 1:length(fns)
+    parm.(fns{ii}) = par_mineos.(fns{ii});
+end
 
 %% filenames
-if ~ischar(ID), ID = num2str(ID);end
-ID = [ID,R_or_L(1)];
-cardfile = [ID,'.model'];
+if ~ischar(parm.ID)
+    parm.ID = num2str(parm.ID);
+end
+ID = [parm.ID,parm.R_or_L(1)];
+cardfile = [parm.ID,'.model']; % this might be overwritten later, but is default card file name
 
-switch R_or_L(1)
+switch parm.R_or_L(1)
     case 'R'
         modetype = 'S';
     case 'L'
         modetype = 'T';
 end
 
-qmod= '/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod';
+qmod= parm.qmodpath;
 
 %% =======================================================================
 wd = pwd;
@@ -52,11 +63,11 @@ end
 
 
 %% write MINEOS executable and input files format
-if ischar(model) && exist(model,'file')==2
-    cardfile = model;
-    delcard = false;
+if ischar(model) && exist(model,'file')==2 % input model is a card file, not a matlab structure
+    cardfile = model; % 'model' is just the path to the cardfile
+    delcard = false; % do not delete the card file you fed in
 else
-    %% Radial anisotropy
+%% WRITE CARD FILE
     if ~isfield(model,'Sanis')
         model.Sanis = zeros(size(model.z));
     end
@@ -69,16 +80,16 @@ else
     [ vpv,vph ] = VpvVph_from_VpPhi( model.VP,phi );
 
 	write_cardfile(cardfile,model.z,vpv,vsv,model.rho,[],[],vph,vsh);
-    delcard = true;
+    delcard = true; % delete this card file afterwards (you still have the model to re-make it if you want)
 end
 
 % count lines in cardfile
 [ model_info ] = read_cardfile( cardfile );
-skiplines = model_info.nlay + 6;
+skiplines = model_info.nlay + 5; % can skip at least this many lines at the beginning of the .asc output file(s)
 
-% compute max frequency (mHz)
-fmax = 1000./min(swperiods)+0.1;
-fmax = 200.05;
+% compute max frequency (mHz) - no need to compute past the minimum period desired
+parm.fmax = 1000./min(swperiods)+0.1;
+
 %% do MINEOS on it
 if ifverbose
     fprintf('    > Running MINEOS normal mode summation code. \n    > Will take some time...')
@@ -92,7 +103,7 @@ ascfile =  [ID,'_',lrunstr,'.asc'];
 eigfile =  [ID,'_',lrunstr,'.eig'];
 modefile = [ID,'_',lrunstr,'.mode'];
 
-writeMINEOSmodefile( modefile, modetype,[],[],[],fmax )
+writeMINEOSmodefile( modefile, modetype,parm.lmin,parm.lmax,parm.fmin,parm.fmax )
 writeMINEOSexecfile( execfile,cardfile,modefile,eigfile,ascfile,[ID,'.log']);
 
 system(['chmod u+x ' execfile]); % change execfile permissions
@@ -113,7 +124,7 @@ llasts = llast; lrunstrs = {lrunstr};
 while Tmin > min(swperiods)
 
 lrun = lrun + 1; lrunstr = num2str(lrun);
-lmin = llast + l_increment_standard;
+lmin = llast + parm.l_increment_standard;
 
 if ifverbose
     fprintf('\n        %4u modes done, failed after mode %u... restarting at %u',max(round(llast-lfirst+1)),llast,lmin)
@@ -124,7 +135,7 @@ ascfile =  [ID,'_',lrunstr,'.asc'];
 eigfile =  [ID,'_',lrunstr,'.eig'];
 modefile = [ID,'_',lrunstr,'.mode'];
 
-writeMINEOSmodefile( modefile, modetype,lmin,[],[],fmax )
+writeMINEOSmodefile( modefile, modetype,lmin,parm.lmax,parm.fmin,parm.fmax )
 writeMINEOSexecfile( execfile,cardfile,modefile,eigfile,ascfile,[ID,'.log']);
 
 system(['chmod u+x ' execfile]); % change execfile permissions
@@ -136,7 +147,7 @@ delete(execfile,modefile); % kill files we don't need
 [~,llast,lfirst,Tmin] = readMINEOS_ascfile(ascfile,0,skiplines);
 
 if isempty(llast) % what if that run produced nothing?
-    llast=lmin + l_increment_failed;
+    llast=lmin + parm.l_increment_failed;
     Tmin = max(swperiods);
     lfirst = llast+1;
     delete(ascfile,eigfile); % kill files we don't need
@@ -220,6 +231,6 @@ if ifplot
 end
 
 if ifverbose
-    fprintf('Mineos %s%s took %.5f s\n',ID,R_or_L(1),toc)
+	fprintf('Kernels %s took %.5f s\n',ID,(now-tic1)*86400)
 end
  

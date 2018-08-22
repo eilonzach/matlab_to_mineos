@@ -34,19 +34,17 @@ ifdelete = false; % don't delete the files at the end - you may want to see what
 ID = 'example1';
 
 % First do Rayleigh waves, and get phase velocity kernels
-R_or_L = 'R';
-phV_or_grV = 'ph';
+par_mineos = struct('R_or_L','R','phV_or_grV','ph','ID',ID);
 
-[phV_R1,grV_R1,eigfiles] = run_mineos(model,swperiods,R_or_L,ID,0,ifplot,ifverbose);
-[K_R1] = run_kernels(swperiods,R_or_L,phV_or_grV,ID,eigfiles,ifdelete,ifplot,ifverbose);
+[phV_R1,grV_R1,eigfiles] = run_mineos(model,swperiods,par_mineos,0,ifplot,ifverbose);
+[K_R1] = run_kernels(swperiods,par_mineos,eigfiles,ifdelete,ifplot,ifverbose);
 clone_figure(88,1)
 
 % now run the same model but for Love waves, again phase velocity kernels
-R_or_L = 'L';
-phV_or_grV = 'ph';
+par_mineos.R_or_L = 'L';
 
-[phV_L1,grV_L1,eigfiles] = run_mineos(model,swperiods,R_or_L,ID,0,ifplot,ifverbose);
-[K_L1] = run_kernels(swperiods,R_or_L,phV_or_grV,ID,eigfiles,ifdelete,ifplot,ifverbose);
+[phV_L1,grV_L1,eigfiles] = run_mineos(model,swperiods,par_mineos,0,ifplot,ifverbose);
+[K_L1] = run_kernels(swperiods,par_mineos,eigfiles,ifdelete,ifplot,ifverbose);
 clone_figure(88,2)
 
 %% now run a more complex model that requires re-starting mineos and stitching
@@ -59,17 +57,15 @@ ifdelete = false; % don't delete the files at the end - you may want to see what
 ID = 'example2';
 
 % First do Rayleigh waves, and get phase velocity kernels
-R_or_L = 'R';
-phV_or_grV = 'ph';
+par_mineos = struct('R_or_L','R','phV_or_grV','ph','ID',ID);
 
-[phV_R2,grV_R2,eigfiles] = run_mineos(model,swperiods,R_or_L,ID,0,ifplot,ifverbose);
-[K_R2] = run_kernels(swperiods,R_or_L,phV_or_grV,ID,eigfiles,ifdelete,ifplot,ifverbose);
+[phV_R2,grV_R2,eigfiles] = run_mineos(model,swperiods,par_mineos,0,ifplot,ifverbose);
+[K_R2] = run_kernels(swperiods,par_mineos,eigfiles,ifdelete,ifplot,ifverbose);
 clone_figure(88,3)
 
 % now run the same model but for Love waves, again phase velocity kernels
-R_or_L = 'L';
-phV_or_grV = 'ph';
+par_mineos.R_or_L = 'L';
 
-[phV_L2,grV_L2,eigfiles] = run_mineos(model,swperiods,R_or_L,ID,0,ifplot,ifverbose);
-[K_L2] = run_kernels(swperiods,R_or_L,phV_or_grV,ID,eigfiles,ifdelete,ifplot,ifverbose);
+[phV_L2,grV_L2,eigfiles] = run_mineos(model,swperiods,par_mineos,0,ifplot,ifverbose);
+[K_L2] = run_kernels(swperiods,par_mineos,eigfiles,ifdelete,ifplot,ifverbose);
 clone_figure(88,4)
