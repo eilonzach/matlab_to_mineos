@@ -23,6 +23,7 @@ end
 %% parameters
 % default parameters
 parm = struct('R_or_L','R',...
+              'phV_or_grV','ph',...
               'ID','example',...
               'lmin',0,...            % minimum angular order
               'lmax',3500,...         % expected max angular order
@@ -30,6 +31,7 @@ parm = struct('R_or_L','R',...
               'fmax',200.05,...       % max frequency (mHz) - gets reset by min period 
               'l_increment_standard',2,... % 
               'l_increment_failed',5,...
+              'maxrunN',2e2,...
               'qmodpath','/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod');
 % replace default values with user values, where appropriate. 
 fns = fieldnames(par_mineos);
@@ -88,7 +90,7 @@ end
 skiplines = model_info.nlay + 5; % can skip at least this many lines at the beginning of the .asc output file(s)
 
 % compute max frequency (mHz) - no need to compute past the minimum period desired
-parm.fmax = 1000./min(swperiods)+0.1;
+parm.fmax = 1000./min(swperiods)+1; % need to go a bit beyond ideal min period..
 
 %% do MINEOS on it
 if ifverbose
@@ -159,6 +161,11 @@ ascfiles{length(ascfiles)+1} = ascfile;
 eigfiles{length(eigfiles)+1} = eigfile;
 llasts(length(eigfiles)) = llast;
 lrunstrs{length(eigfiles)} = lrunstr;
+
+if lrun > parm.maxrunN
+    fprintf('More than %u tries; breaking mineos eig loop\n');
+    break
+end
 
 end % on while not reached low period
 
