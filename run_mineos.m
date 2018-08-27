@@ -31,7 +31,7 @@ parm = struct('R_or_L','R',...
               'fmax',200.05,...       % max frequency (mHz) - gets reset by min period 
               'l_increment_standard',2,... % 
               'l_increment_failed',5,...
-              'maxrunN',2e2,...
+              'maxrunN',5e2,...
               'qmodpath','/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod');
 % replace default values with user values, where appropriate. 
 fns = fieldnames(par_mineos);
@@ -132,6 +132,12 @@ if ifverbose
     fprintf('\n        %4u modes done, failed after mode %u... restarting at %u',max(round(llast-lfirst+1)),llast,lmin)
 end
 
+if lrun > parm.maxrunN
+    fprintf('More than %u tries; breaking mineos eig loop\n',parm.maxrunN);
+    error;
+end
+
+
 execfile = [ID,'_',lrunstr,'.run_mineos'];
 ascfile =  [ID,'_',lrunstr,'.asc'];
 eigfile =  [ID,'_',lrunstr,'.eig'];
@@ -162,10 +168,6 @@ eigfiles{length(eigfiles)+1} = eigfile;
 llasts(length(eigfiles)) = llast;
 lrunstrs{length(eigfiles)} = lrunstr;
 
-if lrun > parm.maxrunN
-    fprintf('More than %u tries; breaking mineos eig loop\n');
-    break
-end
 
 end % on while not reached low period
 
