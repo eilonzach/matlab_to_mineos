@@ -34,9 +34,11 @@ parm = struct('R_or_L','R',...
               'maxrunN',5e2,...
               'qmodpath','/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod');
 % replace default values with user values, where appropriate. 
-fns = fieldnames(par_mineos);
-for ii = 1:length(fns)
-    parm.(fns{ii}) = par_mineos.(fns{ii});
+if ~isempty(par_mineos)
+    fns = fieldnames(par_mineos);
+    for ii = 1:length(fns)
+        parm.(fns{ii}) = par_mineos.(fns{ii});
+    end
 end
 
 %% filenames
@@ -125,48 +127,48 @@ llasts = llast; lrunstrs = {lrunstr};
 % Tmin = max(swperiods);
 while Tmin > min(swperiods)
 
-lrun = lrun + 1; lrunstr = num2str(lrun);
-lmin = llast + parm.l_increment_standard;
+    lrun = lrun + 1; lrunstr = num2str(lrun);
+    lmin = llast + parm.l_increment_standard;
 
-if ifverbose
-    fprintf('\n        %4u modes done, failed after mode %u... restarting at %u',max(round(llast-lfirst+1)),llast,lmin)
-end
+    if ifverbose
+        fprintf('\n        %4u modes done, failed after mode %u... restarting at %u',max(round(llast-lfirst+1)),llast,lmin)
+    end
 
-if lrun > parm.maxrunN
-    fprintf('More than %u tries; breaking mineos eig loop\n',parm.maxrunN);
-    error;
-end
+    if lrun > parm.maxrunN
+        fprintf('More than %u tries; breaking mineos eig loop\n',parm.maxrunN);
+        error;
+    end
 
 
-execfile = [ID,'_',lrunstr,'.run_mineos'];
-ascfile =  [ID,'_',lrunstr,'.asc'];
-eigfile =  [ID,'_',lrunstr,'.eig'];
-modefile = [ID,'_',lrunstr,'.mode'];
+    execfile = [ID,'_',lrunstr,'.run_mineos'];
+    ascfile =  [ID,'_',lrunstr,'.asc'];
+    eigfile =  [ID,'_',lrunstr,'.eig'];
+    modefile = [ID,'_',lrunstr,'.mode'];
 
-writeMINEOSmodefile( modefile, modetype,lmin,parm.lmax,parm.fmin,parm.fmax )
-writeMINEOSexecfile( execfile,cardfile,modefile,eigfile,ascfile,[ID,'.log']);
+    writeMINEOSmodefile( modefile, modetype,lmin,parm.lmax,parm.fmin,parm.fmax )
+    writeMINEOSexecfile( execfile,cardfile,modefile,eigfile,ascfile,[ID,'.log']);
 
-system(['chmod u+x ' execfile]); % change execfile permissions
-[status,cmdout] = system(['/opt/local/bin/gtimeout 100 ./',execfile]); % run execfile
+    system(['chmod u+x ' execfile]); % change execfile permissions
+    [status,cmdout] = system(['/opt/local/bin/gtimeout 100 ./',execfile]); % run execfile
 
-delete(execfile,modefile); % kill files we don't need
+    delete(execfile,modefile); % kill files we don't need
 
-% read asc output
-[~,llast,lfirst,Tmin] = readMINEOS_ascfile(ascfile,0,skiplines);
+    % read asc output
+    [~,llast,lfirst,Tmin] = readMINEOS_ascfile(ascfile,0,skiplines);
 
-if isempty(llast) % what if that run produced nothing?
-    llast=lmin + parm.l_increment_failed;
-    Tmin = max(swperiods);
-    lfirst = llast+1;
-    delete(ascfile,eigfile); % kill files we don't need
-    continue
-end
+    if isempty(llast) % what if that run produced nothing?
+        llast=lmin + parm.l_increment_failed;
+        Tmin = max(swperiods);
+        lfirst = llast+1;
+        delete(ascfile,eigfile); % kill files we don't need
+        continue
+    end
 
-% save eigfiles and ascfiles for stitching together later
-ascfiles{length(ascfiles)+1} = ascfile;
-eigfiles{length(eigfiles)+1} = eigfile;
-llasts(length(eigfiles)) = llast;
-lrunstrs{length(eigfiles)} = lrunstr;
+    % save eigfiles and ascfiles for stitching together later
+    ascfiles{length(ascfiles)+1} = ascfile;
+    eigfiles{length(eigfiles)+1} = eigfile;
+    llasts(length(eigfiles)) = llast;
+    lrunstrs{length(eigfiles)} = lrunstr;
 
 
 end % on while not reached low period
