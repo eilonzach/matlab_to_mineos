@@ -1,6 +1,6 @@
 function [phV,grV,eigfiles_fix] = run_mineos(model,swperiods,par_mineos,ifdelete,ifplot,ifverbose)
 % [phV,grV] = run_mineos(model,swperiods,par_mineos,ifdelete,ifplot,ifverbose)
-% 
+%
 % Function to run the MINEOS for a given model and extract the phase
 % velocities at a bunch of input periods. If you keep the output files
 % around (ifdelete==false) then they can be used to calculate perturbation
@@ -28,12 +28,12 @@ parm = struct('R_or_L','R',...
               'lmin',0,...            % minimum angular order
               'lmax',3500,...         % expected max angular order
               'fmin',0.05,...         % min frequency (mHz)
-              'fmax',200.05,...       % max frequency (mHz) - gets reset by min period 
-              'l_increment_standard',2,... % 
+              'fmax',200.05,...       % max frequency (mHz) - gets reset by min period
+              'l_increment_standard',2,... %
               'l_increment_failed',5,...
               'maxrunN',5e2,...
               'qmodpath','/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod');
-% replace default values with user values, where appropriate. 
+% replace default values with user values, where appropriate.
 if ~isempty(par_mineos)
     fns = fieldnames(par_mineos);
     for ii = 1:length(fns)
@@ -64,7 +64,6 @@ if isempty(MINEOSDIR)
     MINEOSDIR =  extractBefore(mfilename('fullpath'),mfilename);
 end
 % cd(MINEOSDIR);
-
 
 %% write MINEOS executable and input files format
 if ischar(model) && exist(model,'file')==2 % input model is a card file, not a matlab structure
@@ -117,7 +116,7 @@ delete(execfile,modefile); % kill files we don't need
 
 % read prelim output
 [~,llast,lfirst,Tmin] = readMINEOS_ascfile(ascfile,0,skiplines);
- 
+
 ascfiles = {ascfile};
 eigfiles = {eigfile};
 llasts = llast; lrunstrs = {lrunstr};
@@ -186,10 +185,10 @@ eigfiles_fix = eigfiles;
 for ief = 1:length(eigfiles)-1
     execfile = [ID,'_',lrunstrs{ief},'.eig_recover'];
     writeMINEOSeig_recover( execfile,eigfiles{ief},llasts(ief) )
-    
+
     system(['chmod u+x ' execfile]); % change execfile permissions
     [status,cmdout] = system(['/opt/local/bin/gtimeout 100 ./',execfile]); % run execfile
-    
+
     eigfiles_fix{ief} = [eigfiles{ief},'_fix'];
     delete(execfile);
 end
@@ -207,12 +206,12 @@ delete(qexecfile);
 try
     [phV,grV] = readMINEOS_qfile([ID,'.q'],swperiods);
 catch
-    error('some error with extracting phV and grV from q-file')        
+    error('some error with extracting phV and grV from q-file')
 end
-  
+
 phV = phV(:);
 grV = grV(:);
-if any(isnan(phV)) || any(isnan(grV))         
+if any(isnan(phV)) || any(isnan(grV))
 	error('Some NaN data for %s',cardfile)
 end
 
@@ -244,4 +243,3 @@ end
 if ifverbose
 	fprintf('Kernels %s took %.5f s\n',ID,(now-tic1)*86400)
 end
- 

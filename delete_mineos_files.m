@@ -14,8 +14,8 @@ logfile = [ID,'.log'];          %if exist(logfile,'file')~=2, logfile = ''; end
 execfile_k = [ID,'.run_kernels'];%if exist(execfile_k,'file')~=2, execfile_k = ''; end
 stripfile = [ID,'.strip'];      %if exist(stripfile,'file')~=2, stripfile = ''; end
 tabfile = [ID,'.table'];        %if exist(tabfile,'file')~=2, tabfile = ''; end
-tabfile_hdr = [tabfile,'_hdr'];        
-branchfile = [tabfile,'_hdr.branch'];   
+tabfile_hdr = [tabfile,'_hdr'];
+branchfile = [tabfile,'_hdr.branch'];
 kernelfile = [ID,'.cvfrechet']; %if exist(kernelfile,'file')~=2, kernelfile = ''; end
 
 % preamble
@@ -50,7 +50,7 @@ if exist(execfile_k,'file')==2
 %         fprintf('Tried to delete MINEOS files but some error');
 %     end
     for ip = 1:length(swperiods)
-        delete(ikernelfiles{ip}); 
+        delete(ikernelfiles{ip});
     end
 end
 if exist(execfile_k,'file')==2, delete(execfile_k); end
@@ -60,4 +60,3 @@ if exist(logfile,'file')==2, delete(logfile); end
 cd(wd);
 
 end
-

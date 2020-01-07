@@ -1,13 +1,13 @@
 function ikernelfiles = writeKERNELCALCexecfile(swperiods,R_or_L,ph_gr,execfile,stripfile,eigfiles,qmod,tabfile,qfile,kernelfile,ikprefix,logfile)
 % ikernelfiles = writeKERNELCALCexecfile(swperiods,R_o_rL,ph_or_gr,execfile,stripfile,eigfiles,tabfile,qfile,kernelfile,ikprefix,logfile)
-%   
+%
 % Function to write execution file for kernel calculator having run MINEOS code
-% 
+%
 % INPUTS:
 %  swperiods - vector of surface wave periods (will be rounded to integers)
 %  R_or_L    - string of Rayleygh ('Ray'|'R') or Love ('Lov'|'R')
 %  ph_gr     - (1x2) vector to do phase [1 0] or group [0 1] or both [1 1]
-%  execfile  - name of executable file 
+%  execfile  - name of executable file
 %  stripfile  - name of strip file
 %  eigfiles  - name of eigenfunctions output binary files (plural if
 %              multiple mineos runs required to get to max freq
@@ -21,7 +21,7 @@ function ikernelfiles = writeKERNELCALCexecfile(swperiods,R_or_L,ph_gr,execfile,
 ikernelfiles = cell({});
 
 if exist(execfile,'file')==2
-    delete(execfile); % kill if it is there 
+    delete(execfile); % kill if it is there
 end
 
 switch R_or_L
@@ -157,7 +157,7 @@ fprintf(fid,'!\n');
 %
 fprintf(fid,'#\n');
 end
-    
+
 
 %% CV kernels =======================================================================
 if ph_gr(1) % only if ph_gr instructs
@@ -207,7 +207,3 @@ fprintf(fid,'echo "Done velocity calculation, cleaning up..." >> %s\n',logfile);
 fclose(fid);
 
 end
-
-
-
-

@@ -1,6 +1,6 @@
 function [SW_V_kernels] = run_kernels(swperiods,par_mineos,eigfiles,ifdelete,ifplot,ifverbose,ifanis)
 % [SWV_kernels] = run_kernels(swperiods,par_mineos,eigfiles,ifdelete,ifplot,ifverbose,ifanis)
-% 
+%
 % Function to calculate perturbational phase velocity kernels, having
 % previously run MINEOS
 tic1 = now;
@@ -20,7 +20,7 @@ end
 if nargin < 6 || isempty(ifverbose)
     ifverbose = true;
 end
-if nargin < 9 || isempty(ifanis)
+if nargin < 7 || isempty(ifanis)
     ifanis = false;
 end
 
@@ -32,11 +32,11 @@ parm = struct('R_or_L','R',...
               'lmin',0,...            % minimum angular order
               'lmax',3500,...         % expected max angular order
               'fmin',0.05,...         % min frequency (mHz)
-              'fmax',200.05,...       % max frequency (mHz) - gets reset by min period 
-              'l_increment_standard',2,... % 
+              'fmax',200.05,...       % max frequency (mHz) - gets reset by min period
+              'l_increment_standard',2,... %
               'l_increment_failed',5,...
               'qmodpath','/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod');
-% replace default values with user values, where appropriate. 
+% replace default values with user values, where appropriate.
 fns = fieldnames(par_mineos);
 for ii = 1:length(fns)
     parm.(fns{ii}) = par_mineos.(fns{ii});
@@ -48,12 +48,12 @@ ph_gr = [0 0];
 if ~isempty(regexp(parm.phV_or_grV,'ph','once')) ||...
     ~isempty(regexp(parm.phV_or_grV,'phase','once')) ||...
     ~isempty(regexp(parm.phV_or_grV,'c','once'))
-   ph_gr(1)= true; 
+   ph_gr(1)= true;
 end
 if ~isempty(regexp(parm.phV_or_grV,'gr','once')) ||...
     ~isempty(regexp(parm.phV_or_grV,'group','once')) ||...
     ~isempty(regexp(parm.phV_or_grV,'U','once'))
-   ph_gr(2)= true; 
+   ph_gr(2)= true;
 end
 
 %% filenames
@@ -66,7 +66,6 @@ tabfile = [ID,'.table'];
 qfile = [ID,'.q'];
 kernelfile = [ID,'.frechet'];
 
-
 % standard inputs, don't get re-written
 qmod= '/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod';
 
@@ -74,9 +73,9 @@ qmod= '/Users/zeilon/Documents/MATLAB/matlab_to_mineos/safekeeping/qmod';
 wd = pwd;
 % cd('/Users/zeilon/Documents/MATLAB/matlab_to_mineos');
 
-%% CALCULATE AND READ IN PERTURBATION KERNELS 
+%% CALCULATE AND READ IN PERTURBATION KERNELS
 %(frechet derivatves of parm perturbation)
-    
+
 %% write kernel calc executable
 ikernelfiles = writeKERNELCALCexecfile(swperiods,parm.R_or_L(1),ph_gr,execfile_k,stripfile,eigfiles,qmod,tabfile,qfile,kernelfile,ID,logfile);
 system(['chmod u+x ' execfile_k]);
@@ -91,7 +90,7 @@ end
 if ifverbose
     fprintf(' success!\n');
 end
-%% read 
+%% read
 vees = find(ph_gr);
 phgropt = {'ph','gr'};
 for iv = 1:length(vees)
@@ -111,7 +110,7 @@ if ifplot
     figure(88), clf; set(gcf,'pos',[331 385 1348 713]);
     ax1 = subplot(3,3,[1,4]); cla, hold on;
     ax2 = subplot(3,3,[2,5,8]); cla, hold on;
-    ax3 = subplot(3,3,[3,6,9]); cla, hold on;   
+    ax3 = subplot(3,3,[3,6,9]); cla, hold on;
     % kernels
     plot_KERNELS( SW_V_kernels,ifanis,ax2,ax3 )
 
@@ -147,4 +146,3 @@ cd(wd);
 if ifverbose
 	fprintf('Kernels %s took %.5f s\n',ID,(now-tic1)*86400)
 end
- 
